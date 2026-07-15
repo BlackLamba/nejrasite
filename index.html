@@ -68,30 +68,75 @@
                     </div>
                     <!-- Hero Graphic: Glassmorphic terminal with an interactive HTML5 Node Network Canvas -->
                     <div class="hero-graphic-container">
-                        <div class="glass-terminal">
-                            <div class="terminal-header">
-                                <div class="terminal-dots">
-                                    <span class="t-dot red"></span>
-                                    <span class="t-dot yellow"></span>
-                                    <span class="t-dot green"></span>
+                        <div class="ai-visualizer">
+                            <!-- Центральное ядро нейросети -->
+                            <div class="neural-core">
+                                <div class="core-ring ring-1"></div>
+                                <div class="core-ring ring-2"></div>
+                                <div class="core-ring ring-3"></div>
+                                <div class="core-pulse"></div>
+                                <div class="core-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                        <path d="M2 17l10 5 10-5"/>
+                                        <path d="M2 12l10 5 10-5"/>
+                                    </svg>
                                 </div>
-                                <div class="terminal-title">neira-ai-network.py</div>
                             </div>
-                            <div class="canvas-container">
-                                <canvas id="hero-canvas"></canvas>
-                                <div class="terminal-overlay">
-                                    <div class="overlay-line">
-                                        <span>SYSTEM_LOG</span>
-                                        <span>ACTIVE</span>
-                                    </div>
-                                    <div class="overlay-line">
-                                        <span>LOSS_METRIC</span>
-                                        <span>0.0014</span>
-                                    </div>
-                                    <div class="overlay-line">
-                                        <span>VECTORS_DB</span>
-                                        <span>QDRANT_OK</span>
-                                    </div>
+                            
+                            <!-- Орбитальные узлы-планеты -->
+                            <div class="orbit-ring orbit-1">
+                                <div class="orbit-node node-1">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">NLP</span>
+                                </div>
+                                <div class="orbit-node node-2">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">LLM</span>
+                                </div>
+                                <div class="orbit-node node-3">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">CV</span>
+                                </div>
+                            </div>
+                            
+                            <div class="orbit-ring orbit-2">
+                                <div class="orbit-node node-4">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">DB</span>
+                                </div>
+                                <div class="orbit-node node-5">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">API</span>
+                                </div>
+                                <div class="orbit-node node-6">
+                                    <div class="node-dot"></div>
+                                    <span class="node-label">ML</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Частицы фона -->
+                            <div class="particles-container" id="particles-container"></div>
+                            
+                            <!-- Данные-лейблы по бокам -->
+                            <div class="data-panel data-left">
+                                <div class="data-row">
+                                    <span class="data-key">MODEL</span>
+                                    <span class="data-val">GigaChat</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-key">LOSS</span>
+                                    <span class="data-val highlight-green">0.0014</span>
+                                </div>
+                            </div>
+                            <div class="data-panel data-right">
+                                <div class="data-row">
+                                    <span class="data-key">VECTOR DB</span>
+                                    <span class="data-val">QDRANT</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-key">STATUS</span>
+                                    <span class="data-val highlight-blue">ACTIVE</span>
                                 </div>
                             </div>
                         </div>
@@ -576,7 +621,7 @@
                             </li>
                             <!-- NEW Phone entry added: Облачная АТС -->
                             <li class="contact-list-item">
-                                <h4><span class="ru">Телефон приемной</span><span class="en">Phone Number</span></h4>
+                                <h4><span class="ru">Контакты</span><span class="en">Phone Number</span></h4>
                                 <p>+7 (4852) 33-66-55</p>
                                 <p>+7 (4852) 234-100</p>
                                 <span><span class="ru">(По будням с 9:00 до 18:00 по московскому времени)</span><span class="en">(Mon - Fri, 9:00 AM - 6:00 PM MSK)</span></span>
@@ -899,102 +944,63 @@
 
     <!-- NEW HTML5 Interactive Particle Neural Network Canvas Script -->
     <script>
-        const canvas = document.getElementById('hero-canvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            let width = canvas.width = canvas.offsetWidth;
-            let height = canvas.height = canvas.offsetHeight;
-            
-            // Nodes array
-            const nodes = [];
-            const maxNodes = 40;
-            
-            class Node {
-                constructor() {
-                    this.x = Math.random() * width;
-                    this.y = Math.random() * height;
-                    this.vx = (Math.random() - 0.5) * 0.7;
-                    this.vy = (Math.random() - 0.5) * 0.7;
-                    this.r = Math.random() * 2 + 1.5;
-                }
-                update() {
-                    this.x += this.vx;
-                    this.y += this.vy;
-                    if (this.x < 0 || this.x > width) this.vx *= -1;
-                    if (this.y < 0 || this.y > height) this.vy *= -1;
-                }
-            }
-            
-            for (let i = 0; i < maxNodes; i++) {
-                nodes.push(new Node());
-            }
-            
-            let mouse = { x: null, y: null };
-            canvas.addEventListener('mousemove', (e) => {
-                const rect = canvas.getBoundingClientRect();
-                mouse.x = e.clientX - rect.left;
-                mouse.y = e.clientY - rect.top;
-            });
-            canvas.addEventListener('mouseleave', () => {
-                mouse.x = null;
-                mouse.y = null;
-            });
-            
-            function animate() {
-                ctx.clearRect(0, 0, width, height);
+        const particlesContainer = document.getElementById('particles-container');
+        
+        if (particlesContainer) {
+            function createParticles() {
+                particlesContainer.innerHTML = '';
+                const count = 25;
                 
-                // Update & Draw nodes
-                nodes.forEach(node => {
-                    node.update();
-                    ctx.beginPath();
-                    ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
-                    ctx.fillStyle = 'rgba(37, 99, 235, 0.45)';
-                    ctx.fill();
+                for (let i = 0; i < count; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = 40 + Math.random() * 80;
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+                    
+                    particle.style.left = '50%';
+                    particle.style.top = '50%';
+                    particle.style.setProperty('--tx', tx + 'px');
+                    particle.style.setProperty('--ty', ty + 'px');
+                    particle.style.animationDelay = Math.random() * 4 + 's';
+                    particle.style.animationDuration = (2.5 + Math.random() * 4) + 's';
+                    
+                    const colors = ['var(--accent-blue)', 'var(--accent-indigo)', 'var(--accent-emerald)'];
+                    particle.style.background = colors[Math.floor(Math.random() * 3)];
+                    
+                    particlesContainer.appendChild(particle);
+                }
+            }
+            
+            createParticles();
+            setInterval(createParticles, 10000);
+            
+            const visualizer = document.querySelector('.ai-visualizer');
+            if (visualizer) {
+                visualizer.addEventListener('mousemove', (e) => {
+                    const rect = visualizer.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    const rotateX = (y / rect.height) * -15;
+                    const rotateY = (x / rect.width) * 15;
+                    
+                    visualizer.style.transform = 
+                        `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
                 });
                 
-                // Draw lines
-                for (let i = 0; i < nodes.length; i++) {
-                    for (let j = i + 1; j < nodes.length; j++) {
-                        const dx = nodes[i].x - nodes[j].x;
-                        const dy = nodes[i].y - nodes[j].y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        if (dist < 80) {
-                            ctx.beginPath();
-                            ctx.moveTo(nodes[i].x, nodes[i].y);
-                            ctx.lineTo(nodes[j].x, nodes[j].y);
-                            ctx.strokeStyle = `rgba(37, 99, 235, ${0.15 * (1 - dist/80)})`;
-                            ctx.lineWidth = 0.8;
-                            ctx.stroke();
-                        }
-                    }
-                    
-                    // Connect to mouse
-                    if (mouse.x !== null) {
-                        const mdx = nodes[i].x - mouse.x;
-                        const mdy = nodes[i].y - mouse.y;
-                        const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
-                        if (mdist < 100) {
-                            ctx.beginPath();
-                            ctx.moveTo(nodes[i].x, nodes[i].y);
-                            ctx.lineTo(mouse.x, mouse.y);
-                            ctx.strokeStyle = `rgba(79, 70, 229, ${0.28 * (1 - mdist/100)})`;
-                            ctx.lineWidth = 1;
-                            ctx.stroke();
-                        }
-                    }
-                }
+                visualizer.addEventListener('mouseleave', () => {
+                    visualizer.style.transform = 
+                        'perspective(800px) rotateX(0deg) rotateY(0deg)';
+                    visualizer.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                });
                 
-                requestAnimationFrame(animate);
+                visualizer.addEventListener('mouseenter', () => {
+                    visualizer.style.transition = 'transform 0.15s ease-out';
+                });
             }
-            
-            animate();
-            
-            // Resize handler
-            window.addEventListener('resize', () => {
-                if (!canvas) return;
-                width = canvas.width = canvas.offsetWidth;
-                height = canvas.height = canvas.offsetHeight;
-            });
         }
     </script>
 </body>
