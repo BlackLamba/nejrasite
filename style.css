@@ -830,6 +830,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
 }
 
 /* Detailed Requisites Section */
+/* Detailed Requisites Section */
 .requisites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -863,6 +864,13 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     font-size: 0.92rem;
     font-weight: 600;
     color: var(--text-main);
+}
+
+/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ: Отключаем принудительный span 2 на узких экранах */
+@media (max-width: 600px) {
+    .req-item[style*="grid-column: span 2"] {
+        grid-column: span 1 !important; /* Заставляем блок с адресом вести себя как обычный (1 колонка) */
+    }
 }
 
 /* Code Block stylings */
