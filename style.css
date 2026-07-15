@@ -346,7 +346,6 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     border-color: var(--border-hover);
 }
 
-/* Hero Graphic Terminal & Dynamic Interactive Canvas Node Graph */
 /* ========== AI Visualizer (Hero Graphic) ========== */
 .hero-graphic-container {
     display: flex;
@@ -368,7 +367,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     border-radius: 50%;
 }
 
-/* Центральное ядро */
+/* Central Core */
 .neural-core {
     position: absolute;
     width: 90px;
@@ -439,7 +438,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     height: 20px;
 }
 
-/* Орбиты */
+/* Orbits */
 .orbit-ring {
     position: absolute;
     border-radius: 50%;
@@ -469,12 +468,10 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     transform: translate(-50%, -50%);
 }
 
-/* Позиции узлов на орбите 1 */
 .orbit-1 .node-1 { top: 0; left: 50%; }
 .orbit-1 .node-2 { top: 50%; left: 100%; }
 .orbit-1 .node-3 { top: 100%; left: 50%; }
 
-/* Позиции узлов на орбите 2 (смещены) */
 .orbit-2 .node-4 { top: 15%; left: 15%; }
 .orbit-2 .node-5 { top: 85%; left: 20%; }
 .orbit-2 .node-6 { top: 50%; left: 90%; }
@@ -504,7 +501,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     border: 1px solid var(--border);
 }
 
-/* Боковые панели данных */
+/* Data panels */
 .data-panel {
     position: absolute;
     display: flex;
@@ -553,7 +550,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
 .highlight-green { color: var(--accent-emerald) !important; }
 .highlight-blue { color: var(--accent-blue) !important; }
 
-/* Частицы (генерируются JS) */
+/* Particles */
 .particles-container {
     position: absolute;
     width: 100%;
@@ -572,7 +569,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     animation: particleFloat 4s ease-in-out infinite;
 }
 
-/* ========== Анимации ========== */
+/* Animations */
 @keyframes coreSpin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
@@ -603,19 +600,6 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     20% { opacity: 0.8; }
     80% { opacity: 0.3; }
     100% { transform: translate(var(--tx), var(--ty)) scale(1.5); opacity: 0; }
-}
-
-/* ========== Отзывчивость ========== */
-@media (max-width: 850px) {
-    .ai-visualizer {
-        width: 280px;
-        height: 280px;
-    }
-    .orbit-1 { width: 170px; height: 170px; }
-    .orbit-2 { width: 230px; height: 230px; }
-    .data-panel { display: none; }
-    .core-icon { width: 28px; height: 28px; border-radius: 8px; }
-    .core-icon svg { width: 16px; height: 16px; }
 }
 
 /* Vibrant Corporate Grids */
@@ -1019,8 +1003,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     background-color: #f8fafc;
 }
 
-/* Detailed Requisites Section */
-/* Detailed Requisites Section */
+/* Detailed Requisites Section - FIXED MOBILE OVERFLOW */
 .requisites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1054,32 +1037,19 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     font-size: 0.92rem;
     font-weight: 600;
     color: var(--text-main);
+    word-wrap: break-word; /* ensure long names do not overflow */
 }
 
-/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ: Отключаем принудительный span 2 на узких экранах */
+/* FIXED MOBILE REQUISITES GRID */
 @media (max-width: 600px) {
-    .req-item[style*="grid-column: span 2"] {
-        grid-column: span 1 !important; /* Заставляем блок с адресом вести себя как обычный (1 колонка) */
+    .requisites-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .req-item {
+        grid-column: span 1 !important; /* Forces items to stay within 1 col boundaries */
     }
 }
-
-/* Code Block stylings */
-.code-block {
-    background-color: #1e1e1e; /* human editor black */
-    color: #d4d4d4;
-    font-family: Consolas, Monaco, Courier, monospace;
-    font-size: 0.82rem;
-    padding: 16px;
-    border-radius: var(--radius-md);
-    overflow-x: auto;
-    border: 1px solid var(--border);
-    margin: 12px 0;
-    line-height: 1.45;
-}
-
-.code-block span.comment { color: #6a9955; }
-.code-block span.keyword { color: #569cd6; }
-.code-block span.string { color: #ce9178; }
 
 /* Contacts & Simple Form */
 .contacts-flex {
@@ -1292,7 +1262,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     transform: translateY(0);
 }
 
-/* Mobile Adjustments */
+/* Mobile Adjustments - FULLY OPTIMIZED FOR ALL SCREEN SIZES */
 @media (max-width: 850px) {
     .header {
         border-radius: 20px;
@@ -1369,4 +1339,14 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     .workflow-arrow {
         transform: rotate(90deg);
     }
+    
+    .ai-visualizer {
+        width: 280px;
+        height: 280px;
+    }
+    .orbit-1 { width: 170px; height: 170px; }
+    .orbit-2 { width: 230px; height: 230px; }
+    .data-panel { display: none; }
+    .core-icon { width: 28px; height: 28px; border-radius: 8px; }
+    .core-icon svg { width: 16px; height: 16px; }
 }

@@ -30,7 +30,7 @@
                 </nav>
                 <button class="btn-lang" id="lang-btn" onclick="toggleLanguage()">EN</button>
                 
-                <!-- NEW: Mobile Hamburger Menu Toggle Button -->
+                <!-- Mobile Hamburger Menu Toggle Button -->
                 <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12" class="line" id="line-mid"></line>
@@ -66,7 +66,7 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Hero Graphic: Glassmorphic terminal with an interactive HTML5 Node Network Canvas -->
+                    <!-- Hero Graphic: 3D interactive orbits visualizer provided by the user -->
                     <div class="hero-graphic-container">
                         <div class="ai-visualizer">
                             <!-- Центральное ядро нейросети -->
@@ -77,9 +77,9 @@
                                 <div class="core-pulse"></div>
                                 <div class="core-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                        <path d="M2 17l10 5 10-5"/>
-                                        <path d="M2 12l10 5 10-5"/>
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                        <path d="M2 17l10 5 10-5"></path>
+                                        <path d="M2 12l10 5 10-5"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -352,7 +352,7 @@
                             </button>
                         </div>
                         
-                        <div style="background-color: #fafaf9; border: 1px solid var(--border); padding: 14px; border-radius: var(--radius-md); font-size: 0.85rem; color: var(--text-muted);">
+                        <div style="background-color: #fafaf9; border: 1px solid var(--border); padding: 14px; border-radius: var(--radius-md);">
                             <span class="ru">Эмулятор работает автономно в песочнице вашего браузера, не отправляет сетевых запросов и не требует прохождения регистрации. Вы можете запускать сценарии неограниченное число раз.</span>
                             <span class="en">This emulator runs inside your browser sandbox. It is fully offline, does not submit data online, and requires no registration. Feel free to click any scenario.</span>
                         </div>
@@ -376,7 +376,6 @@
                                 <div class="tg-msg-time" id="tg-time-init">12:00</div>
                             </div>
                         </div>
-
                         <div class="tg-footer-input">
                             <input class="tg-input" type="text" readonly id="tg-input-box" placeholder="Нажмите сценарий слева...">
                             <button class="tg-send-btn">
@@ -415,7 +414,6 @@
                 <h3 class="en" style="margin-top: 32px; margin-bottom: 16px;">Product Development Roadmap</h3>
                 <p class="ru" style="margin-top: -8px; margin-bottom: 24px;">Мы постоянно развиваем платформу, добавляя новые возможности для повышения эффективности работы команд. Ниже приведены планируемые к реализации функции:</p>
                 <p class="en" style="margin-top: -8px; margin-bottom: 24px;">We are consistently enhancing our platform, adding new productivity tools for collaborative teams. Below is the scheduled feature release roadmap:</p>
-
                 <div class="grid-3" style="margin-bottom: 32px;">
                     <!-- Phase 1 Card -->
                     <div class="card" style="background-color: #fafaf9;">
@@ -465,82 +463,59 @@
 
             </div>
 
-            <!-- ================= SERVICES & TECH TAB (Blocks 1A & 1B) ================= -->
+            <!-- ================= SERVICES & TECH TAB ================= -->
             <div id="tab-tech" class="tab-panel">
                 
-                <h2 class="ru">Проектирование ПО и Разработка Баз Данных</h2>
-                <h2 class="en">Software Engineering & DB Systems Design</h2>
+                <h2 class="ru">Внедрение Искусственного Интеллекта и Автоматизация</h2>
+                <h2 class="en">AI Integration & Workflow Automation</h2>
                 
-                <p class="ru" style="margin-top: -12px;">ООО «Нейра» предоставляет полный комплекс услуг по проектированию наукоемкого ПО, программированию микросервисов и разработке баз данных для корпоративных клиентов.</p>
-                <p class="en" style="margin-top: -12px;">Neira LLC provides high-end services in technical design, custom software programming, and advanced database integration.</p>
+                <p class="ru" style="margin-top: -12px;">ООО «Нейра» — ваш надежный партнер полного цикла во внедрении технологий искусственного интеллекта. Мы не просто пишем код, а создаем полноценные умные экосистемы, которые трансформируют ваш бизнес, экономят миллионные бюджеты и радикально повышают продуктивность команды.</p>
+                <p class="en">Neira LLC is your full-cycle partner in artificial intelligence integration. We don't just write code — we build comprehensive smart ecosystems that transform your business, save millions in budgets, and dramatically increase team productivity.</p>
 
-                <!-- NEW: AI Specific Development Competencies (Added blocks specifically about AI product development) -->
-                <h3 class="ru" style="margin-top: 24px;">Специализированная разработка ИИ-продуктов</h3>
-                <h3 class="en" style="margin-top: 24px;">Specialized AI Product Development</h3>
-                <div class="grid-3" style="margin-bottom: 24px;">
-                    <div class="card" style="border-left: 3px solid var(--accent-emerald);">
-                        <h4 class="ru">Интеграция больших языковых моделей (LLM)</h4>
-                        <h4 class="en">Large Language Models (LLM) Integration</h4>
-                        <p class="ru">Проектирование и внедрение интеллектуальных сервисов на базе GigaChat API, YandexGPT, а также адаптация открытых LLM (Fine-Tuning) под специфические корпоративные стандарты.</p>
-                        <p class="en">Designing and deploying intelligent systems leveraging GigaChat, YandexGPT, and fine-tuning open-source LLMs aligned with corporate guidelines.</p>
+                <!-- Full cycle AI Integration block - Hercules positioning! -->
+                <div class="grid-2" style="margin-top: 24px;">
+                    <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                        <h4 class="ru">1. Аудит процессов и поиск точек роста</h4>
+                        <h4 class="en">1. Process Auditing & ROI Discovery</h4>
+                        <p class="ru" style="font-size: 0.92rem;">Мы глубоко анализируем бизнес-процессы вашей компании, находим рутинные участки и предлагаем точные ИИ-решения. Мы рассчитываем финансовую пользу до начала разработки: как именно внедрение ИИ сэкономит деньги и улучшит условия работы сотрудников.</p>
+                        <p class="en" style="font-size: 0.92rem;">We analyze your business workflows, detect routine bottlenecks, and propose exact AI models. We calculate financial ROI prior to development: how exactly AI will save money and optimize your staff's daily operations.</p>
                     </div>
-                    <div class="card" style="border-left: 3px solid var(--accent-indigo);">
-                        <h4 class="ru">Векторный поиск и семантические базы знаний</h4>
-                        <h4 class="en">Vector Search & Knowledge Bases</h4>
-                        <p class="ru">Построение быстрых семантических хранилищ с использованием Qdrant. Преобразование документов в математические эмбеддинги для точного извлечения контекста.</p>
-                        <p class="en">Building fast semantic document retrieval clusters utilizing Qdrant vector databases. Converting text fragments into vector embeddings.</p>
+
+                    <div class="card" style="border-left: 4px solid var(--accent-indigo);">
+                        <h4 class="ru">2. Разработка индивидуальных ИИ-решений под ключ</h4>
+                        <h4 class="en">2. Bespoke End-to-End AI Engineering</h4>
+                        <p class="ru" style="font-size: 0.92rem;">Создаем уникальные ИИ-продукты под ваши задачи: от умных виртуальных коллег, глубоко знающих ваши регламенты и базы данных, до специализированных NLP-моделей классификации документов и разметки сложных текстовых массивов.</p>
+                        <p class="en" style="font-size: 0.92rem;">We build custom AI applications designed for your needs: from smart digital colleagues fluent in your internal databases to highly specific NLP classifiers and semantic parsing layers.</p>
                     </div>
-                    <div class="card" style="border-left: 3px solid var(--accent-blue);">
-                        <h4 class="ru">Автоматизация процессов методами NLP</h4>
-                        <h4 class="en">NLP-Driven Process Automation</h4>
-                        <p class="ru">Разработка алгоритмов извлечения сущностей (NER), распознавания намерений (Intent Recognition) и интеллектуального анализа чат-потоков в реальном времени.</p>
-                        <p class="en">Developing Named Entity Recognition (NER), Intent Recognition algorithms, and intelligent real-time workflow extraction from messenger threads.</p>
+
+                    <div class="card" style="border-left: 4px solid var(--accent-emerald);">
+                        <h4 class="ru">3. Бесшовная автоматизация и интеграция</h4>
+                        <h4 class="en">3. Seamless System Automation</h4>
+                        <p class="ru" style="font-size: 0.92rem;">Интегрируем искусственный интеллект в ваши привычные инструменты: мессенджеры, таск-трекеры, базы знаний и CRM. Настраиваем автоматическое извлечение задач, встреч, распознавание аудиофайлов и мгновенное составление саммари.</p>
+                        <p class="en" style="font-size: 0.92rem;">We embed intelligence into your existing workspaces: corporate messengers, task trackers, databases, and CRMs. We configure hands-free voice transcription, action tracking, and automatic summaries.</p>
+                    </div>
+
+                    <div class="card" style="border-left: 4px solid var(--accent-amber);">
+                        <h4 class="ru">4. Пожизненное сопровождение и развитие</h4>
+                        <h4 class="en">4. Continuous Support & Hyper-scaling</h4>
+                        <p class="ru" style="font-size: 0.92rem;">Мы берем на себя всю техническую поддержку: мониторинг качества ответов моделей, дообучение нейросетей на новых данных, масштабирование инфраструктуры векторных БД и постоянный технический консалтинг вашего бизнеса.</p>
+                        <p class="en" style="font-size: 0.92rem;">We manage the entire operations lifecycle: monitoring response accuracy, retraining neural networks on fresh datasets, scaling vector infrastructure, and providing on-demand business consulting.</p>
                     </div>
                 </div>
 
-                <!-- NEW: AI Pipeline Workflows Graphics (Added under tech tab) -->
-                <h3 class="ru" style="margin-bottom: 16px;">Схема контура обработки данных Neirix</h3>
-                <h3 class="en" style="margin-bottom: 16px;">Neirix Processing Pipeline Layout</h3>
-                <div class="ai-workflow">
+                <!-- Pure CSS AI Pipeline Workflows Graphics -->
+                <h3 class="ru" style="margin-bottom: 16px; margin-top: 32px;">Схема сквозного цикла автоматизации процессов</h3>
+                <h3 class="en" style="margin-bottom: 16px; margin-top: 32px;">End-to-End Process Automation Cycle</h3>
+                <div class="ai-workflow" style="margin-top: 16px;">
                     <div class="workflow-nodes">
-                        <div class="workflow-node"><span class="ru">Входящий чат</span><span class="en">User Input Chat</span></div>
+                        <div class="workflow-node"><span class="ru">Бизнес-процесс</span><span class="en">Business Process</span></div>
                         <div class="workflow-arrow">&rarr;</div>
-                        <div class="workflow-node" style="border-color: var(--accent-indigo); color: var(--accent-indigo);"><span class="ru">MiniLM Embeddings</span><span class="en">MiniLM Embeddings</span></div>
+                        <div class="workflow-node" style="border-color: var(--accent-indigo); color: var(--accent-indigo);"><span class="ru">ИИ-ассистент</span><span class="en">AI Assistant</span></div>
                         <div class="workflow-arrow">&rarr;</div>
-                        <div class="workflow-node" style="border-color: var(--accent-emerald); color: var(--accent-emerald);"><span class="ru">Qdrant Vector DB</span><span class="en">Qdrant Vector DB</span></div>
+                        <div class="workflow-node" style="border-color: var(--accent-emerald); color: var(--accent-emerald);"><span class="ru">Автоматизация</span><span class="en">Automation</span></div>
                         <div class="workflow-arrow">&rarr;</div>
-                        <div class="workflow-node" style="border-color: var(--accent-blue); color: var(--accent-blue);"><span class="ru">GigaChat LLM API</span><span class="en">GigaChat LLM API</span></div>
-                        <div class="workflow-arrow">&rarr;</div>
-                        <div class="workflow-node"><span class="ru">Результат / Дайджест</span><span class="en">Formatted Digest</span></div>
+                        <div class="workflow-node" style="border-color: var(--accent-blue); color: var(--accent-blue);"><span class="ru">Экономия времени и бюджета</span><span class="en">Time & ROI Saved</span></div>
                     </div>
-                </div>
-
-                <!-- Block 1A Description -->
-                <div class="card" style="margin-bottom: 24px;">
-                    <h3 class="ru">Инжиниринг и программирование программных систем</h3>
-                    <h3 class="en">System Engineering & Custom Programming</h3>
-                    <p class="ru">Процесс создания программных продуктов в ООО «Нейра» регламентирован строгими методологиями разработки (Agile/Scrum) и включает следующие фазы:</p>
-                    <p class="en">Our engineering workflows strictly align with industry-leading standards (Agile/Scrum) and cover the full product lifecycle:</p>
-                    
-                    <ul style="margin-left: 20px; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 8px;">
-                        <li><strong style="color: var(--text-main);"><span class="ru">Анализ и Архитектура:</span><span class="en">Architecture & Analysis:</span></strong> <span class="ru">Проектирование ERD-схем, построение диаграмм системных потоков (DFD), спецификация API.</span><span class="en">ERD relational data modeling, system data flow diagramming (DFD), and detailed API specs.</span></li>
-                        <li><strong style="color: var(--text-main);"><span class="ru">Программирование (Backend & Frontend):</span><span class="en">Backend & Frontend Coding:</span></strong> <span class="ru">Написание асинхронного серверного кода, чистая реализация пользовательских интерфейсов без избыточности.</span><span class="en">Asynchronous backend server coding, building high-performance modern user layouts.</span></li>
-                        <li><strong style="color: var(--text-main);"><span class="ru">Тестирование и CI/CD:</span><span class="en">Testing and CI/CD:</span></strong> <span class="ru">Покрытие тестами (PyTest, Unit), статический анализ кода (Ruff, SonarQube), автоматический деплой через GitLab.</span><span class="en">Rigorous code test coverage (PyTest), static analytics checking, and secure CI/CD pipelines via GitLab.</span></li>
-                    </ul>
-                </div>
-
-                <!-- Block 1B Description -->
-                <div class="card" style="margin-bottom: 24px;">
-                    <h3 class="ru">Проектирование, администрирование и сопровождение баз данных</h3>
-                    <h3 class="en">Relational & Non-Relational Database Systems Design</h3>
-                    <p class="ru">Мы проектируем сложные схемы данных и проводим полный спектр оптимизационных работ СУБД для обеспечения максимального отклика систем:</p>
-                    <p class="en">We construct enterprise-grade databases, optimize queries, and run administration maintenance:</p>
-                    
-                    <ul style="margin-left: 20px; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 8px;">
-                        <li><strong style="color: var(--text-main);"><span class="ru">Физическое проектирование СУБД:</span><span class="en">Database Physical Modeling:</span></strong> <span class="ru">Определение таблиц, связей, ограничений внешних ключей, настройка партиционирования таблиц в PostgreSQL.</span><span class="en">Tables definition, structural constraints mapping, indexes creation, and partitions setup in PostgreSQL.</span></li>
-                        <li><strong style="color: var(--text-main);"><span class="ru">Профилирование и оптимизация:</span><span class="en">Profiling & Optimization:</span></strong> <span class="ru">Детальный разбор планов тяжелых запросов (EXPLAIN ANALYZE), рефакторинг медленных SQL-процедур.</span><span class="en">Query plan analysis (EXPLAIN ANALYZE), indexes refactoring, and stored procedures speed optimization.</span></li>
-                        <li><strong style="color: var(--text-main);"><span class="ru">Векторный поиск и семантика:</span><span class="en">Vector Semantics Integration:</span></strong> <span class="ru">Настройка хранения и сопоставления многомерных эмбеддингов в специализированных хранилищах Qdrant.</span><span class="en">Setting up vector proximity search pipelines (HNSW indexes) inside Qdrant for semantic search lookup.</span></li>
-                    </ul>
                 </div>
 
             </div>
@@ -619,12 +594,23 @@
                                 <p><span class="ru">150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310</span><span class="en">Office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia</span></p>
                                 <span><span class="ru">(Юридический и фактический адрес компании)</span><span class="en">(Official legal and primary corporate office)</span></span>
                             </li>
-                            <!-- NEW Phone entry added: Облачная АТС -->
+                            <!-- Combined Contact Phones Card -->
                             <li class="contact-list-item">
                                 <h4><span class="ru">Контакты</span><span class="en">Phone Number</span></h4>
-                                <p>+7 (4852) 33-66-55</p>
-                                <p>+7 (4852) 234-100</p>
-                                <span><span class="ru">(По будням с 9:00 до 18:00 по московскому времени)</span><span class="en">(Mon - Fri, 9:00 AM - 6:00 PM MSK)</span></span>
+                                <p style="margin-bottom: 8px;">
+                                    <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Приемная:</span><span class="en">Reception:</span></span> +7 (4852) 33-66-55<br>
+                                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-light);">
+                                        <span class="ru">(По будням с 9:00 до 18:00 по московскому времени)</span>
+                                        <span class="en">(Mon - Fri, 9:00 AM - 6:00 PM MSK)</span>
+                                    </span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Облачная АТС:</span><span class="en">Cloud PBX:</span></span> +7 (4852) 234-100<br>
+                                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-light);">
+                                        <span class="ru">(Облачная АТС Нейры)</span>
+                                        <span class="en">(Neira Cloud PBX)</span>
+                                    </span>
+                                </p>
                             </li>
                             <li class="contact-list-item">
                                 <h4>Email</h4>
@@ -633,7 +619,7 @@
                             </li>
                         </ul>
 
-                        <!-- Balanced Info Card (replaces the offline map wrapper for a clean layout balance) -->
+                        <!-- Balanced Info Card -->
                         <div class="card" style="background-color: var(--accent-blue-light); border-color: rgba(37, 99, 235, 0.1); margin-top: 16px;">
                             <h4 class="ru" style="color: var(--accent-blue); margin-bottom: 8px;">Режим работы и поддержка</h4>
                             <h4 class="en" style="color: var(--accent-blue); margin-bottom: 8px;">Working Hours & Support</h4>
@@ -758,7 +744,7 @@
             }
         }
 
-        // NEW: Mobile Hamburger Menu Toggle Logic
+        // Mobile Hamburger Menu Toggle Logic
         function toggleMobileMenu() {
             const navMenu = document.querySelector('.nav-menu');
             const header = document.getElementById('nav-header');
@@ -918,7 +904,7 @@
             const isRu = document.body.classList.contains('lang-ru');
             let replyText = '';
             if (actionType === 'meeting_resched') {
-                replyText = isRu ? 'Бот перешел в диалог переноса встречи. Напишите новую дату и время:' : 'Bot is ready to reschedule. Send new date & time details:';
+                replyText = isRu ? 'Бот перешел в диалог переноса встречи. Напишите новую дату и время:' : 'Bot is ready to reschedule. Send new date &amp; time details:';
             } else if (actionType === 'meeting_cancel') {
                 replyText = isRu ? 'Встреча успешно отменена. Участники получили оповещение, напоминания сброшены.' : 'Meeting canceled. Notification alerts have been dispatched.';
             } else if (actionType === 'task_done') {
@@ -942,7 +928,7 @@
         });
     </script>
 
-    <!-- NEW HTML5 Interactive Particle Neural Network Canvas Script -->
+    <!-- NEW HTML5 Interactive Particle Orbit System Script -->
     <script>
         const particlesContainer = document.getElementById('particles-container');
         
