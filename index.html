@@ -282,12 +282,7 @@
                             <span class="ru">Программный продукт</span><span class="en">Software Product</span>
                         </div>
                         <h2>Neirix — Telegram-бот коллега-помощник</h2>
-                        <p class="ru" style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: -8px; margin-bottom: 12px; border-bottom: 1px dashed rgba(5,150,105,0.2); padding-bottom: 8px;">
-                            Правообладатель ПО: Исключительные права на программу для ЭВМ «Neirix» принадлежат ООО «Нейра». Лицензирование осуществляется на основании официального соглашения.
-                        </p>
-                        <p class="en" style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: -8px; margin-bottom: 12px; border-bottom: 1px dashed rgba(5,150,105,0.2); padding-bottom: 8px;">
-                            Software Intellectual Property: Exclusive rights to the program "Neirix" belong directly to Neira LLC under private development title.
-                        </p>
+
                         
                         <p class="ru">Интеллектуальный ассистент для рабочих чатов, который помогает командам эффективно координировать задачи, планировать встречи, контролировать дедлайны и автоматически подводить итоги обсуждений.</p>
                         <p class="en">An intelligent assistant for team chats that helps coordinate tasks, schedule meetings, monitor deadlines, and automatically summarize conversations.</p>
@@ -752,13 +747,13 @@
                     </div>
 
                     <!-- Software Ownership Block (Compliance check No. 2) -->
-                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Заявление о правообладании программным обеспечением:</h4>
+                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Сведения о правообладании программным обеспечением:</h4>
                     <h4 class="en" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Software Ownership Intellectual Property Declaration:</h4>
                     <p class="ru" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px; background-color: var(--accent-blue-light); padding: 12px; border-radius: var(--radius-sm); border: 1px solid rgba(37,99,235,0.1); color: var(--text-main);">
-                        <strong>ООО «Нейра» является единственным и законным правообладателем программы для ЭВМ «Neirix — интеллектуальный ассистент для рабочих чатов».</strong> Исключительные права на данный программный продукт принадлежат ООО «Нейра» на основании собственной внутренней разработки программного кода. Предоставление права использования программного обеспечения третьим лицам осуществляется на основании лицензионных договоров и соглашений об использовании (оферт).
+                        В соответствии с Приказом Минцифры России № 511, ООО «Нейра» заявляет, что на текущий момент организация не является правообладателем зарегистрированных программ для ЭВМ. Деятельность компании сосредоточена на оказании услуг по проектированию, разработке, адаптации, интеграции и сопровождению программного обеспечения и искусственного интеллекта по заказам клиентов (заказная разработка).
                     </p>
                     <p class="en" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px; background-color: var(--accent-blue-light); padding: 12px; border-radius: var(--radius-sm); border: 1px solid rgba(37,99,235,0.1); color: var(--text-main);">
-                        <strong>Neira LLC is the sole and exclusive right holder of the computer program "Neirix — intelligent colleague assistant for team chats".</strong> Exclusive intellectual property rights are held directly by Neira LLC on the basis of in-house software engineering. Rights of software utilization are granted to third parties under licensing agreements and EULAs.
+                        In compliance with Ministry Order No. 511, Neira LLC declares that as of the current date, the organization is not a registered right holder of computer software programs. The company's operations are focused on providing software engineering, adaptation, integration, and SLA maintenance services under custom development contracts.
                     </p>
 
                     <!-- Tech Stack Block (Compliance check No. 3) -->
@@ -1067,12 +1062,12 @@
             window.scrollTo({ top: 0 });
         }
 
-        // Dynamic Header Scroll shrink interaction
+        // Dynamic Header Scroll shrink interaction with hysteresis buffer to completely prevent logo/header flickering
         window.addEventListener('scroll', () => {
             const header = document.getElementById('nav-header');
-            if (window.scrollY > 40) {
+            if (window.scrollY > 80) {
                 header.classList.add('shrunk');
-            } else {
+            } else if (window.scrollY < 20) {
                 header.classList.remove('shrunk');
             }
         });

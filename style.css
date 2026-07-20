@@ -164,7 +164,7 @@ a:hover { text-decoration: underline; color: var(--accent-blue-hover); }
     height: 56px; /* Expanded for maximum impact and detailed visibility */
     width: auto;
     display: block;
-    transition: transform 0.3s ease;
+    transition: var(--transition-smooth);
 }
 
 .header.shrunk .logo-img {
