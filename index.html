@@ -22,7 +22,7 @@
                     <ul class="nav-menu">
                         <li><button class="nav-link active" id="nav-home" onclick="switchTab('home')"><span class="ru">Главная</span><span class="en">Home</span></button></li>
                         <li><button class="nav-link" id="nav-products" onclick="switchTab('products')"><span class="ru">Продукты</span><span class="en">Products</span></button></li>
-                        <li><button class="nav-link" id="nav-tech" onclick="switchTab('tech')"><span class="ru">Услуги и Технологии</span><span class="en">Services & Tech</span></button></li>
+                        <li><button class="nav-link" id="nav-tech" onclick="switchTab('tech')"><span class="ru">Услуги и Технологии</span><span class="en">Services &amp; Tech</span></button></li>
                         <li><button class="nav-link" id="nav-pricing" onclick="switchTab('pricing')"><span class="ru">Стоимость</span><span class="en">Pricing</span></button></li>
                         <li><button class="nav-link" id="nav-contacts" onclick="switchTab('contacts')"><span class="ru">Контакты</span><span class="en">Contacts</span></button></li>
                         <li><button class="nav-link" id="nav-legal" onclick="switchTab('legal')"><span class="ru">Правовая информация</span><span class="en">Legal Info</span></button></li>
@@ -45,7 +45,7 @@
     <!-- Main Section -->
     <main class="main-content">
         <div class="container">
-
+            
             <!-- ================= HOME TAB ================= -->
             <div id="tab-home" class="tab-panel active">
                 
@@ -66,7 +66,8 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Hero Graphic: 3D interactive orbits visualizer provided by the user -->
+
+                    <!-- Hero Graphic: 3D interactive orbits visualizer -->
                     <div class="hero-graphic-container">
                         <div class="ai-visualizer">
                             <!-- Центральное ядро нейросети -->
@@ -93,7 +94,7 @@
                                 <div class="orbit-node node-2">
                                     <div class="node-dot"></div>
                                     <span class="node-label">LLM</span>
-                                </div>
+                                end-node</div>
                                 <div class="orbit-node node-3">
                                     <div class="node-dot"></div>
                                     <span class="node-label">CV</span>
@@ -188,7 +189,7 @@
                         </div>
                         <div class="badge-tag" style="margin-bottom: 12px; align-self: flex-start;">Код 62.02 | Code 62.02</div>
                         <h3 class="ru">Консультирование и внедрение ИТ-решений</h3>
-                        <h3 class="en">IT Consulting & Implementation</h3>
+                        <h3 class="en">IT Consulting &amp; Implementation</h3>
                         <p class="ru">Консультирование по вопросам информационных технологий, внедрение, настройка, сопровождение программных продуктов и интеграция программных решений.</p>
                         <p class="en">Information technology consulting, software implementation, configuration, support, and integration of software solutions.</p>
                     </div>
@@ -207,7 +208,7 @@
                         </div>
                         <div class="badge-tag" style="margin-bottom: 12px; align-self: flex-start;">Код 63.11 | Code 63.11</div>
                         <h3 class="ru">Обработка данных и размещение информации</h3>
-                        <h3 class="en">Data Processing & Hosting</h3>
+                        <h3 class="en">Data Processing &amp; Hosting</h3>
                         <p class="ru">Обработка, хранение и администрирование данных, сопровождение баз данных, предоставление облачной инфраструктуры и информационных сервисов.</p>
                         <p class="en">Data processing, storage, database administration, cloud infrastructure, hosting, and information services.</p>
                     </div>
@@ -263,13 +264,12 @@
                             <div class="req-title"><span class="ru">Юридический адрес</span><span class="en">Legal Address</span></div>
                             <div class="req-value" style="font-size: 0.85rem;"><span class="ru">150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310</span><span class="en">Office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia</span></div>
                         </div>
-                        <div class="req-item">
-                            <div class="req-title"><span class="ru">Генеральный Директор</span><span class="en">General Manager</span></div>
-                            <div class="req-value"><span class="ru">Пестерева Д. А.</span><span class="en">Pestereva D. A.</span></div>
+                        <div class="req-item" style="grid-column: span 2;">
+                            <div class="req-title"><span class="ru">Генеральный директор</span><span class="en">General Manager</span></div>
+                            <div class="req-value"><span class="ru">Пестерева Дарья Андреевна</span><span class="en">Daria Andreevna Pestereva</span></div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- ================= PRODUCTS TAB ================= -->
@@ -282,6 +282,12 @@
                             <span class="ru">Программный продукт</span><span class="en">Software Product</span>
                         </div>
                         <h2>Neirix — Telegram-бот коллега-помощник</h2>
+                        <p class="ru" style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: -8px; margin-bottom: 12px; border-bottom: 1px dashed rgba(5,150,105,0.2); padding-bottom: 8px;">
+                            Правообладатель ПО: Исключительные права на программу для ЭВМ «Neirix» принадлежат ООО «Нейра». Лицензирование осуществляется на основании официального соглашения.
+                        </p>
+                        <p class="en" style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: -8px; margin-bottom: 12px; border-bottom: 1px dashed rgba(5,150,105,0.2); padding-bottom: 8px;">
+                            Software Intellectual Property: Exclusive rights to the program "Neirix" belong directly to Neira LLC under private development title.
+                        </p>
                         
                         <p class="ru">Интеллектуальный ассистент для рабочих чатов, который помогает командам эффективно координировать задачи, планировать встречи, контролировать дедлайны и автоматически подводить итоги обсуждений.</p>
                         <p class="en">An intelligent assistant for team chats that helps coordinate tasks, schedule meetings, monitor deadlines, and automatically summarize conversations.</p>
@@ -292,6 +298,7 @@
                             </a>
                         </div>
                     </div>
+
                     <!-- Bulletproof business benefits instead of technical jargon -->
                     <div style="display: flex; justify-content: center; flex-direction: column; gap: 12px; border: 1px solid var(--border); padding: 20px; border-radius: var(--radius-md); background-color: #fafaf9;">
                         <h4 class="ru" style="border-bottom: 1px solid var(--border); padding-bottom: 6px;">Преимущества для пользователей</h4>
@@ -312,7 +319,7 @@
                 
                 <p class="ru">Выберите один из готовых сценариев слева, чтобы отправить сообщение в чат. Бот Neirix распознает смысл сообщения и сформирует структурированный ответ:</p>
                 <p class="en">Select a message scenario on the left to send it into the chat. The Neirix bot will recognize the meaning of the message and format a structured response:</p>
-
+                
                 <div class="grid-2" style="margin-top: 20px; align-items: stretch;">
                     <!-- Left column: Scenario Selector -->
                     <div>
@@ -352,7 +359,7 @@
                             </button>
                         </div>
                         
-                        <div style="background-color: #fafaf9; border: 1px solid var(--border); padding: 14px; border-radius: var(--radius-md);">
+                        <div style="background-color: #fafaf9; border: 1px solid var(--border); padding: 14px; border-radius: var(--radius-md); font-size: 0.85rem; line-height: 1.4; color: var(--text-muted); margin-top: 12px;">
                             <span class="ru">Эмулятор работает автономно в песочнице вашего браузера, не отправляет сетевых запросов и не требует прохождения регистрации. Вы можете запускать сценарии неограниченное число раз.</span>
                             <span class="en">This emulator runs inside your browser sandbox. It is fully offline, does not submit data online, and requires no registration. Feel free to click any scenario.</span>
                         </div>
@@ -414,19 +421,20 @@
                 <h3 class="en" style="margin-top: 32px; margin-bottom: 16px;">Product Development Roadmap</h3>
                 <p class="ru" style="margin-top: -8px; margin-bottom: 24px;">Мы постоянно развиваем платформу, добавляя новые возможности для повышения эффективности работы команд. Ниже приведены планируемые к реализации функции:</p>
                 <p class="en" style="margin-top: -8px; margin-bottom: 24px;">We are consistently enhancing our platform, adding new productivity tools for collaborative teams. Below is the scheduled feature release roadmap:</p>
+                
                 <div class="grid-3" style="margin-bottom: 32px;">
                     <!-- Phase 1 Card -->
                     <div class="card" style="background-color: #fafaf9;">
                         <span class="badge-tag" style="background-color: var(--accent-blue-light); color: var(--accent-blue); margin-bottom: 12px; border-color: rgba(37,99,235,0.1);">ФАЗА 1: Умный коллега</span>
                         <span class="badge-tag en" style="background-color: var(--accent-blue-light); color: var(--accent-blue); margin-bottom: 12px; border-color: rgba(37,99,235,0.1);">PHASE 1: Smart Colleague</span>
                         <h4 class="ru" style="margin-top: 8px;">Анализ контекста и личный помощник</h4>
-                        <h4 class="en" style="margin-top: 8px;">Context Understanding & Personal PM</h4>
+                        <h4 class="en" style="margin-top: 8px;">Context Understanding &amp; Personal PM</h4>
                         
                         <ul style="margin-left: 14px; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
                             <li><span class="ru">Понимание продолжения диалогов, коротких ответов и связывание истории сообщений.</span><span class="en">Linking sequential dialogue chains, short answers, and long chat histories.</span></li>
                             <li><span class="ru">Голосовые сообщения: автоматическая транскрипция аудиосообщений и кружочков с созданием задач.</span><span class="en">Voice-First: transcribing audio notes and video circles into tasks.</span></li>
                             <li><span class="ru">Поиск по обсуждениям и задачам «по смыслу», вычленение нерешенных вопросов.</span><span class="en">Semantic search across threads, isolating unanswered questions.</span></li>
-                            <li><span class="ru">Разбор пересланных сообщений и прикрепленных документов, извлечение планов.</span><span class="en">Forwarded notes & documents parsing for automated task structuring.</span></li>
+                            <li><span class="ru">Разбор пересланных сообщений и прикрепленных документов, извлечение планов.</span><span class="en">Forwarded notes &amp; documents parsing for automated task structuring.</span></li>
                         </ul>
                     </div>
 
@@ -450,33 +458,42 @@
                         <span class="badge-tag" style="background-color: var(--accent-emerald-light); color: var(--accent-emerald); margin-bottom: 12px; border-color: rgba(5,150,105,0.1);">ФАЗА 3: Корпоративная платформа</span>
                         <span class="badge-tag en" style="background-color: var(--accent-emerald-light); color: var(--accent-emerald); margin-bottom: 12px; border-color: rgba(5,150,105,0.1);">PHASE 3: Corporate AI Ecosystem</span>
                         <h4 class="ru" style="margin-top: 8px;">Внешние интеграции и боты</h4>
-                        <h4 class="en" style="margin-top: 8px;">Enterprise Ecosystem & Integrations</h4>
+                        <h4 class="en" style="margin-top: 8px;">Enterprise Ecosystem &amp; Integrations</h4>
                         
                         <ul style="margin-left: 14px; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
-                            <li><span class="ru">Двусторонняя интеграция с календарями (Google Calendar, Outlook).</span><span class="en">Two-way synchronization with Google Calendar & Outlook.</span></li>
+                            <li><span class="ru">Двусторонняя интеграция с календарями (Google Calendar, Outlook).</span><span class="en">Two-way synchronization with Google Calendar &amp; Outlook.</span></li>
                             <li><span class="ru">Синхронизация с трекерами Jira, Trello, Asana и базами знаний Notion.</span><span class="en">Continuous sync with Jira, Trello, Asana, and Notion workspaces.</span></li>
-                            <li><span class="ru">Интеграция с репозиториями кода GitLab и GitHub для коммит-статистики.</span><span class="en">GitLab & GitHub trackers mapping for code commits monitoring.</span></li>
+                            <li><span class="ru">Интеграция с репозиториями кода GitLab и GitHub для коммит-статистики.</span><span class="en">GitLab &amp; GitHub trackers mapping for code commits monitoring.</span></li>
                             <li><span class="ru">Портирование ИИ-ассистента в платформы Slack и Discord.</span><span class="en">Porting the assistant to Slack and Discord environments.</span></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             <!-- ================= SERVICES & TECH TAB ================= -->
             <div id="tab-tech" class="tab-panel">
                 
                 <h2 class="ru">Внедрение Искусственного Интеллекта и Автоматизация</h2>
-                <h2 class="en">AI Integration & Workflow Automation</h2>
+                <h2 class="en">AI Integration &amp; Workflow Automation</h2>
                 
                 <p class="ru" style="margin-top: -12px;">ООО «Нейра» — ваш надежный партнер полного цикла во внедрении технологий искусственного интеллекта. Мы не просто пишем код, а создаем полноценные умные экосистемы, которые трансформируют ваш бизнес, экономят миллионные бюджеты и радикально повышают продуктивность команды.</p>
+                <div class="card" style="margin-top: 16px; margin-bottom: 16px; padding: 16px; border-left: 3px solid var(--accent-indigo);">
+                    <h4 class="ru" style="font-size: 0.88rem; margin-bottom: 4px; color: var(--text-main);">Используемый технологический стек и инструменты:</h4>
+                    <h4 class="en" style="font-size: 0.88rem; margin-bottom: 4px; color: var(--text-main);">Dev Tech Stack &amp; Engineering Tools Utilized:</h4>
+                    <p class="ru" style="font-size: 0.85rem; margin-bottom: 0; color: var(--text-muted);">
+                        В рамках осуществления уставной деятельности в области информационных технологий ООО «Нейра» использует при разработке, тестировании и внедрении продуктов следующие языки программирования и инструменты: <strong>Python (Django, FastAPI, aiogram), SQL (PostgreSQL), NoSQL (Redis, векторная СУБД Qdrant), Git, Docker, API генеративных моделей (GigaChat API).</strong>
+                    </p>
+                    <p class="en" style="font-size: 0.85rem; margin-bottom: 0; color: var(--text-muted);">
+                        In its default software engineering and deployment operations, Neira LLC utilizes: <strong>Python (Django, FastAPI, aiogram), SQL (PostgreSQL), NoSQL (Redis, Qdrant vector database), Git, Docker, and Generative Model APIs (GigaChat API).</strong>
+                    </p>
+                </div>
                 <p class="en">Neira LLC is your full-cycle partner in artificial intelligence integration. We don't just write code — we build comprehensive smart ecosystems that transform your business, save millions in budgets, and dramatically increase team productivity.</p>
-
+                
                 <!-- Full cycle AI Integration block - Hercules positioning! -->
                 <div class="grid-2" style="margin-top: 24px;">
                     <div class="card" style="border-left: 4px solid var(--accent-blue);">
                         <h4 class="ru">1. Аудит процессов и поиск точек роста</h4>
-                        <h4 class="en">1. Process Auditing & ROI Discovery</h4>
+                        <h4 class="en">1. Process Auditing &amp; ROI Discovery</h4>
                         <p class="ru" style="font-size: 0.92rem;">Мы глубоко анализируем бизнес-процессы вашей компании, находим рутинные участки и предлагаем точные ИИ-решения. Мы рассчитываем финансовую пользу до начала разработки: как именно внедрение ИИ сэкономит деньги и улучшит условия работы сотрудников.</p>
                         <p class="en" style="font-size: 0.92rem;">We analyze your business workflows, detect routine bottlenecks, and propose exact AI models. We calculate financial ROI prior to development: how exactly AI will save money and optimize your staff's daily operations.</p>
                     </div>
@@ -497,7 +514,7 @@
 
                     <div class="card" style="border-left: 4px solid var(--accent-amber);">
                         <h4 class="ru">4. Пожизненное сопровождение и развитие</h4>
-                        <h4 class="en">4. Continuous Support & Hyper-scaling</h4>
+                        <h4 class="en">4. Continuous Support &amp; Hyper-scaling</h4>
                         <p class="ru" style="font-size: 0.92rem;">Мы берем на себя всю техническую поддержку: мониторинг качества ответов моделей, дообучение нейросетей на новых данных, масштабирование инфраструктуры векторных БД и постоянный технический консалтинг вашего бизнеса.</p>
                         <p class="en" style="font-size: 0.92rem;">We manage the entire operations lifecycle: monitoring response accuracy, retraining neural networks on fresh datasets, scaling vector infrastructure, and providing on-demand business consulting.</p>
                     </div>
@@ -514,7 +531,7 @@
                         <div class="workflow-arrow">&rarr;</div>
                         <div class="workflow-node" style="border-color: var(--accent-emerald); color: var(--accent-emerald);"><span class="ru">Автоматизация</span><span class="en">Automation</span></div>
                         <div class="workflow-arrow">&rarr;</div>
-                        <div class="workflow-node" style="border-color: var(--accent-blue); color: var(--accent-blue);"><span class="ru">Экономия времени и бюджета</span><span class="en">Time & ROI Saved</span></div>
+                        <div class="workflow-node" style="border-color: var(--accent-blue); color: var(--accent-blue);"><span class="ru">Экономия времени и бюджета</span><span class="en">Time &amp; ROI Saved</span></div>
                     </div>
                 </div>
 
@@ -528,7 +545,7 @@
                 
                 <p class="ru" style="margin-top: -12px; margin-bottom: 24px;">В соответствии с Приказом Минцифры России от 02.06.2025 № 511, компания предоставляет прозрачные сведения о тарифах на проектирование, разработку, интеграцию и сопровождение систем.</p>
                 <p class="en" style="margin-top: -12px; margin-bottom: 24px;">In compliance with Ministry Order No. 511, we publish transparent rate grids, engineering estimates, and support plans.</p>
-
+                
                 <!-- Licensing estimates details (Order 511 compliance) -->
                 <div class="card" style="margin-bottom: 24px; border-left: 4px solid var(--accent-blue); background: linear-gradient(to right, #ffffff, var(--accent-blue-light));">
                     <h4 class="ru">Стоимость лицензирования программных решений (Neirix)</h4>
@@ -539,7 +556,7 @@
 
                 <!-- Rates table restored -->
                 <h3 class="ru" style="margin-bottom: 12px;">Ставки на ИТ-услуги по проектированию, адаптации и сопровождению</h3>
-                <h3 class="en" style="margin-bottom: 12px;">Professional Engineering & AI Integration Hourly Rates</h3>
+                <h3 class="en" style="margin-bottom: 12px;">Professional Engineering &amp; AI Integration Hourly Rates</h3>
                 <div class="table-responsive">
                     <table class="data-table">
                         <thead>
@@ -551,143 +568,408 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong><span class="ru">Проектирование архитектуры и ИИ-моделей</span><span class="en">AI System & Database Architecture Specs</span></strong></td>
+                                <td><strong><span class="ru">Проектирование архитектуры и ИИ-моделей</span><span class="en">AI System &amp; Database Architecture Specs</span></strong></td>
                                 <td>3 500 ₽</td>
                                 <td><span class="ru">Анализ бизнес-требований, проектирование моделей баз данных, описание ERD, системный анализ.</span><span class="en">Workflow analysis, relational modeling, entity mapping, and systems analysis.</span></td>
                             </tr>
                             <tr>
-                                <td><strong><span class="ru">Разработка ПО и интеграция моделей ИИ</span><span class="en">Custom Software Dev & LLM Integration</span></strong></td>
+                                <td><strong><span class="ru">Разработка ПО и интеграция моделей ИИ</span><span class="en">Custom Software Dev &amp; LLM Integration</span></strong></td>
                                 <td>4 200 ₽</td>
                                 <td><span class="ru">Программирование на Python (Django, FastAPI), разработка ботов, интеграция GigaChat API, тесты.</span><span class="en">Coding in Python/Django/FastAPI, bots development, GigaChat integration, unit testing.</span></td>
                             </tr>
                             <tr>
-                                <td><strong><span class="ru">Настройка и адаптация векторных СУБД</span><span class="en">Vector Database & Semantic Indexing Setup</span></strong></td>
+                                <td><strong><span class="ru">Настройка и адаптация векторных СУБД</span><span class="en">Vector Database &amp; Semantic Indexing Setup</span></strong></td>
                                 <td>4 500 ₽</td>
                                 <td><span class="ru">Внедрение СУБД Qdrant, генерация и семантический анализ эмбеддингов, секционирование таблиц.</span><span class="en">Deployment of Qdrant vector database, semantic embeddings processing, table clustering.</span></td>
                             </tr>
                             <tr>
-                                <td><strong><span class="ru">Техническая поддержка ИТ-систем</span><span class="en">Technical Maintenance & Support Services</span></strong></td>
+                                <td><strong><span class="ru">Техническая поддержка ИТ-систем</span><span class="en">Technical Maintenance &amp; Support Services</span></strong></td>
                                 <td>от 45 000 ₽ / мес</td>
                                 <td><span class="ru">Мониторинг работоспособности, периодическое обновление зависимостей, исправление ошибок по SLA.</span><span class="en">Performance monitoring, dependencies updates, and bug fixes under strict SLA timelines.</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
             </div>
 
-            <!-- ================= CONTACTS TAB ================= -->
+                        <!-- ================= CONTACTS TAB ================= -->
             <div id="tab-contacts" class="tab-panel">
                 
                 <h2 class="ru">Контакты и Реквизиты компании</h2>
-                <h2 class="en">Contact Information & Direct Requisites</h2>
+                <h2 class="en">Contact Information &amp; Direct Requisites</h2>
                 
-                <p class="ru" style="margin-top: -12px; margin-bottom: 32px;">Вы можете связаться с нами напрямую по указанным контактам или отправить сообщение через форму ниже.</p>
-                <p class="en" style="margin-top: -12px; margin-bottom: 32px;">Please reach out using our direct contact details, or fill out the offline-compliant feedback form.</p>
-
-                <div class="contacts-flex">
-                    <!-- Left: Requisites list -->
-                    <div>
-                        <ul class="contact-list" style="margin-bottom: 24px;">
-                            <li class="contact-list-item">
-                                <h4><span class="ru">Адрес местонахождения</span><span class="en">Physical Address</span></h4>
-                                <p><span class="ru">150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310</span><span class="en">Office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia</span></p>
-                                <span><span class="ru">(Юридический и фактический адрес компании)</span><span class="en">(Official legal and primary corporate office)</span></span>
-                            </li>
-                            <!-- Combined Contact Phones Card -->
-                            <li class="contact-list-item">
-                                <h4><span class="ru">Контакты</span><span class="en">Phone Number</span></h4>
-                                <p style="margin-bottom: 8px;">
-                                    <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Приемная:</span><span class="en">Reception:</span></span> +7 (4852) 33-66-55<br>
-                                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-light);">
-                                        <span class="ru">(По будням с 9:00 до 18:00 по московскому времени)</span>
-                                        <span class="en">(Mon - Fri, 9:00 AM - 6:00 PM MSK)</span>
-                                    </span>
-                                </p>
-                                <p>
-                                    <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Облачная АТС:</span><span class="en">Cloud PBX:</span></span> +7 (4852) 234-100<br>
-                                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-light);">
-                                        <span class="ru">(Облачная АТС Нейры)</span>
-                                        <span class="en">(Neira Cloud PBX)</span>
-                                    </span>
-                                </p>
-                            </li>
-                            <li class="contact-list-item">
-                                <h4>Email</h4>
-                                <p><a href="mailto:ai@nejra.ru">ai@nejra.ru</a></p>
-                                <span><span class="ru">(Общие вопросы, техническая поддержка, официальные запросы)</span><span class="en">(Inquiries, SLA support, legal letters)</span></span>
-                            </li>
-                        </ul>
-
-                        <!-- Balanced Info Card -->
-                        <div class="card" style="background-color: var(--accent-blue-light); border-color: rgba(37, 99, 235, 0.1); margin-top: 16px;">
-                            <h4 class="ru" style="color: var(--accent-blue); margin-bottom: 8px;">Режим работы и поддержка</h4>
-                            <h4 class="en" style="color: var(--accent-blue); margin-bottom: 8px;">Working Hours & Support</h4>
-                            <p class="ru" style="font-size: 0.88rem; margin-bottom: 0; color: var(--text-muted);">
-                                Наша команда ИТ-инженеров работает по графику: понедельник — пятница с 09:00 до 18:00 (по московскому времени). 
-                                <br><br>
-                                Среднее время первичного ответа на email-обращения по вопросам пилотной интеграции Neirix составляет не более 2-х часов в рабочее время.
-                            </p>
-                            <p class="en" style="font-size: 0.88rem; margin-bottom: 0; color: var(--text-muted);">
-                                Our core software team operates Monday through Friday, 09:00 AM to 06:00 PM MSK.
-                                <br><br>
-                                The average response timeline to direct business email inquiries concerning Neirix setup integrations is under 2 business hours.
-                            </p>
-                        </div>
+                <p class="ru" style="margin-top: -12px; margin-bottom: 32px;">Вы можете связаться с нами напрямую по указанным контактам. Мы оперативно ответим на любые ваши вопросы.</p>
+                <p class="en" style="margin-top: -12px; margin-bottom: 32px;">You can contact us directly using the specified contact details. We will promptly respond to any of your inquiries.</p>
+                
+                <div class="grid-3">
+                    <div class="card" style="border-top: 3px solid var(--accent-blue);">
+                        <h4><span class="ru">Адрес местонахождения</span><span class="en">Physical Address</span></h4>
+                        <p style="font-weight: 700; color: var(--text-main); margin-top: 8px; font-size: 1rem;"><span class="ru">150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310</span><span class="en">Office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia</span></p>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);"><span class="ru">(Юридический и фактический адрес компании)</span><span class="en">(Official legal and primary corporate office)</span></span>
                     </div>
-
-                    <!-- Right: Feedback Form -->
-                    <div>
-                        <div class="feedback-form">
-                            <h3 class="ru">Отправить сообщение в компанию</h3>
-                            <h3 class="en">Send Message to Neira</h3>
-                            
-                            <p class="ru" style="font-size: 0.88rem; margin-bottom: 16px;">Форма работает в анонимном режиме и не требует прохождения авторизации, полностью соответствуя правилам Минцифры РФ.</p>
-                            <p class="en" style="font-size: 0.88rem; margin-bottom: 16px;">This form collects zero persistent data and requires no authorization profiles, completely adhering to security bylaws.</p>
-
-                            <form id="contactForm" onsubmit="handleFormSubmit(event)">
-                                <div class="form-group">
-                                    <label class="form-label"><span class="ru">Имя / Компания (Опционально)</span><span class="en">Name / Organization (Optional)</span></label>
-                                    <input class="form-input" type="text" id="form-name" placeholder="Иван / ООО Партнер">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label"><span class="ru">Контактный Email</span><span class="en">Contact Email</span></label>
-                                    <input class="form-input" type="email" id="form-email" placeholder="example@mail.ru" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label"><span class="ru">Суть вашего запроса</span><span class="en">Message Body</span></label>
-                                    <textarea class="form-textarea" id="form-msg" placeholder="..." required></textarea>
-                                </div>
-                                <button class="btn btn-primary" style="width: 100%;" type="submit">
-                                    <span class="ru">Отправить анонимно</span><span class="en">Send Anonymously</span>
-                                </button>
-                            </form>
-                        </div>
+                    
+                    <div class="card" style="border-top: 3px solid var(--accent-indigo);">
+                        <h4><span class="ru">Контакты</span><span class="en">Phone Number</span></h4>
+                        <p style="margin-top: 8px; margin-bottom: 8px; font-size: 0.95rem; line-height: 1.4; color: var(--text-main);">
+                            <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Приемная:</span><span class="en">Reception:</span></span> +7 (4852) 33-66-55<br>
+                            <span style="font-size: 0.78rem; font-weight: normal; color: var(--text-light);">
+                                <span class="ru">(По будням с 9:00 до 18:00 по московскому времени)</span>
+                                <span class="en">(Mon - Fri, 9:00 AM - 6:00 PM MSK)</span>
+                            </span>
+                        </p>
+                        <p style="font-size: 0.95rem; line-height: 1.4; color: var(--text-main);">
+                            <span style="font-weight: 500; font-size: 0.95rem; color: var(--text-muted);"><span class="ru">Облачная АТС:</span><span class="en">Cloud PBX:</span></span> +7 (4852) 234-100<br>
+                            <span style="font-size: 0.78rem; font-weight: normal; color: var(--text-light);">
+                                <span class="ru">(Облачная АТС Нейры)</span>
+                                <span class="en">(Neira Cloud PBX)</span>
+                            </span>
+                        </p>
                     </div>
+                    
+                    <div class="card" style="border-top: 3px solid var(--accent-emerald);">
+                        <h4>Email</h4>
+                        <p style="font-weight: 700; font-size: 1.1rem; margin-top: 8px;"><a href="mailto:ai@nejra.ru" style="color: var(--accent-emerald);">ai@nejra.ru</a></p>
+                        <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-top: 4px;"><span class="ru">(Общие вопросы, техническая поддержка, официальные запросы)</span><span class="en">(Inquiries, SLA support, legal letters)</span></span>
+                    </div>
+                </div>
+
+                <!-- Balanced Info Card wide -->
+                <div class="card" style="background-color: var(--accent-blue-light); border-left: 4px solid var(--accent-blue); margin-top: 24px;">
+                    <h4 class="ru" style="color: var(--accent-blue); margin-bottom: 8px;">Режим работы и поддержка</h4>
+                    <h4 class="en" style="color: var(--accent-blue); margin-bottom: 8px;">Working Hours &amp; Support</h4>
+                    <p class="ru" style="font-size: 0.88rem; margin-bottom: 0; color: var(--text-muted);">
+                        Наша команда ИТ-инженеров работает по графику: понедельник — пятница с 09:00 до 18:00 (по московскому времени). 
+                        <br><br>
+                        Среднее время первичного ответа на email-обращения по вопросам пилотной интеграции Neirix составляет не более 2-х часов в рабочее время.
+                    </p>
+                    <p class="en" style="font-size: 0.88rem; margin-bottom: 0; color: var(--text-muted);">
+                        Our core software team operates Monday through Friday, 09:00 AM to 06:00 PM MSK.
+                        <br><br>
+                        The average response timeline to direct business email inquiries concerning Neirix setup integrations is under 2 business hours.
+                    </p>
                 </div>
 
             </div>
 
-            <!-- ================= LEGAL TAB ================= -->
+                                    <!-- ================= LEGAL TAB ================= -->
             <div id="tab-legal" class="tab-panel">
                 
-                <h2 class="ru">Правовая информация</h2>
-                <h2 class="en">Legal Documentation & Disclaimers</h2>
+                <h2 class="ru">Правовая информация и комплаенс</h2>
+                <h2 class="en">Legal Documentation &amp; Compliance</h2>
 
-                <div class="card" style="margin-bottom: 24px;">
-                    <h3 class="ru">Политика обработки персональных данных (ФЗ-152)</h3>
-                    <h3 class="en">Data Privacy Compliance Policy (FZ-152)</h3>
+                <!-- Document 0: Official IT Profile according to Order 511 -->
+                <div class="card" id="legal-info" style="margin-bottom: 24px; border-left: 4px solid var(--accent-emerald); background: linear-gradient(135deg, #ffffff 0%, var(--bg-main) 100%);">
+                    <h3 class="ru" style="color: var(--accent-emerald);">Сведения об ИТ-деятельности организации (Приказ Минцифры № 511)</h3>
+                    <h3 class="en" style="color: var(--accent-emerald);">IT Organization &amp; Operational Profile (Ministry Order No. 511)</h3>
                     
-                    <p class="ru">ООО «Нейра» уважает право пользователей на конфиденциальность. Настоящий сайт не осуществляет сбор, запись, хранение, систематизацию или передачу каких-либо персональных данных пользователей при стандартном посещении и просмотре страниц. Регистрация учетных записей для просмотра сведений о ПО и ИТ-деятельности не предусмотрена.</p>
-                    <p class="en">Neira LLC highly values user privacy. This website does not collect, record, process, index, or store personal user information during routine browsing. No client profiling or logins are required to study our database parameters or code repositories.</p>
+                    <p class="ru" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 16px; font-weight: 500;">
+                        В соответствии с Приказом Минцифры России от 02.06.2025 № 511, ниже опубликованы полные официальные и нормативные сведения об ИТ-деятельности ООО «Нейра».
+                    </p>
+                    <p class="en" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 16px; font-weight: 500;">
+                        In compliance with Ministry Order No. 511, the complete regulatory and operational profile of Neira LLC is published below.
+                    </p>
+
+                    <div class="requisites-grid" style="margin-bottom: 20px;">
+                        <div class="req-item">
+                            <div class="req-title"><span class="ru">Полное наименование</span><span class="en">Full Corporate Name</span></div>
+                            <div class="req-value"><span class="ru">Общество с ограниченной ответственностью «Нейра»</span><span class="en">Neira Limited Liability Company</span></div>
+                        </div>
+                        <div class="req-item">
+                            <div class="req-title">ИНН / ОГРН | Requisites</div>
+                            <div class="req-value" style="font-family: monospace;">7600001030 / 1267600002890</div>
+                        </div>
+                        <div class="req-item">
+                            <div class="req-title"><span class="ru">Генеральный директор</span><span class="en">General Director</span></div>
+                            <div class="req-value"><span class="ru">Пестерева Дарья Андреевна</span><span class="en">Daria Andreevna Pestereva</span></div>
+                        </div>
+                        <div class="req-item">
+                            <div class="req-title"><span class="ru">Основной ОКВЭД 2</span><span class="en">Primary OKVED 2</span></div>
+                            <div class="req-value"><span class="ru">62.01 (Разработка программного обеспечения)</span><span class="en">62.01 (Software Development)</span></div>
+                        </div>
+                        <div class="req-item" style="grid-column: span 2;">
+                            <div class="req-title"><span class="ru">Юридический и фактический адрес</span><span class="en">Physical &amp; Legal Address</span></div>
+                            <div class="req-value" style="font-size: 0.85rem;"><span class="ru">150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310</span><span class="en">Office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Detailed List of IT Activity Codes (Order 449) -->
+                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Коды видов деятельности в области ИТ (по Приказу Минцифры России № 449):</h4>
+                    <h4 class="en" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">IT Operation Codes (according to Ministry Order No. 449):</h4>
+                    
+                    <div class="table-responsive" style="margin-bottom: 20px; box-shadow: none;">
+                        <table class="data-table" style="font-size: 0.82rem;">
+                            <thead>
+                                <tr>
+                                    <th style="padding: 10px 14px;"><span class="ru">Код деятельности</span><span class="en">Operation Code</span></th>
+                                    <th style="padding: 10px 14px;"><span class="ru">Наименование вида деятельности в области ИТ</span><span class="en">Description of IT Operation</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 1.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Проектирование, и (или) обследование, и (или) разработка, и (или) адаптация, и (или) модификация (в том числе локализация, кастомизация, доработка), и (или) обратное проектирование (реверсивный инжиниринг), и (или) модернизация, и (или) обновление, и (или) установка, и (или) интеграция, и (или) настройка, и (или) конфигурирование, и (или) внедрение, и (или) сопровождение, и (или) тестирование, и (или) испытания, и (или) техническая поддержка, и (или) эксплуатация, включая администрирование, а также оказание услуг (в том числе консультационных, услуг по обучению, экспертных услуг и иных) в указанных видах деятельности (далее - проектирование и (или) иная деятельность, а также оказание услуг), в отношении программ для электронных вычислительных машин (далее - программы для ЭВМ), и (или) баз данных (в том числе их обновлений и исправлений), и (или) визуальных пользовательских интерфейсов.</span>
+                                        <span class="en">Designing, inspecting, development, adaptation, and modification of software products, databases, and user interfaces (including customer support, localization, customisation, testing, technical support, and consulting).</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 2.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Реализация программ для ЭВМ, баз данных (включая их обновления и изменения), средств защиты информации, в том числе путем отчуждения прав, предоставления прав (лицензирования), предоставления удаленного доступа посредством информационно-телекоммуникационных сетей, включая информационно-телекоммуникационную сеть "Интернет", предоставление удаленных вычислительных мощностей, эмулирующих физическое оборудование, копирования, оптовой и розничной продажи экземпляров программ для ЭВМ, баз данных, издание сборников программ для ЭВМ и баз данных, предоставления экземпляров программ для ЭВМ, баз данных в лизинг, аренду (прокат).</span>
+                                        <span class="en">Distribution and licensing of computer software products, databases (including software updates, remote cloud access provisions, leasing, and custom configuration licenses sales).</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 3.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Деятельность по созданию баз данных и информационных ресурсов (включая разработку концепций, структуры, состава баз данных), формированию и ведению баз данных (включая сбор данных из одного или более источников, а также ввод, верификацию и актуализацию данных), администрированию баз данных (включая обеспечение возможности доступа к базе данных в режиме непосредственного или телекоммуникационного доступа), поиску данных, их отбору и сортировке по запросам, предоставлению отобранных данных пользователям.</span>
+                                        <span class="en">Activities for creating, forming, structuring, administering, updating, indexing, and maintaining relational databases and semantic information resources.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 5.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Создание и (или) предоставление инфраструктуры для хостинга; web-хостинг, услуги потоковой передачи данных; предоставление прикладного хостинга; выделенный хостинг.</span>
+                                        <span class="en">Creation and provisioning of hosting infrastructure, web hosting, application hosting, dedicated servers hosting, and data streaming services.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 10.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Деятельность по созданию, обучению и поддержке функционирования нейросетей, а также оказание услуг (выполнение работ) по автоматическому распознаванию различного вида изображений, videoпотока, и (или) текстов, и (или) речи, или иных звуков, а также их верификации и преобразованию.</span>
+                                        <span class="en">Creation, fine-tuning, training, and maintenance of neural networks and artificial intelligence systems; automated image, text, and speech-to-text recognition.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 14px; font-weight: bold; font-family: monospace; color: var(--accent-blue);">Код 26.01</td>
+                                    <td style="padding: 10px 14px; line-height: 1.45;">
+                                        <span class="ru">Оказание услуг (выполнение работ) по обработке информации (включая осуществление сбора, записи, накопления, разметки, обобщения, изменения, обновления), обезличиванию, извлечению, использованию, передаче, верификации данных, систематизации информационных массивов, предоставлению в распоряжение пользователя результатов обработки информации, а также по осуществлению наблюдения (мониторингу) за поступающей информацией.</span>
+                                        <span class="en">Data processing workflows (including collection, structured logging, semantic labeling, data anonymisation, and information streams auditing).</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Software Ownership Block (Compliance check No. 2) -->
+                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Заявление о правообладании программным обеспечением:</h4>
+                    <h4 class="en" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Software Ownership Intellectual Property Declaration:</h4>
+                    <p class="ru" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px; background-color: var(--accent-blue-light); padding: 12px; border-radius: var(--radius-sm); border: 1px solid rgba(37,99,235,0.1); color: var(--text-main);">
+                        <strong>ООО «Нейра» является единственным и законным правообладателем программы для ЭВМ «Neirix — интеллектуальный ассистент для рабочих чатов».</strong> Исключительные права на данный программный продукт принадлежат ООО «Нейра» на основании собственной внутренней разработки программного кода. Предоставление права использования программного обеспечения третьим лицам осуществляется на основании лицензионных договоров и соглашений об использовании (оферт).
+                    </p>
+                    <p class="en" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px; background-color: var(--accent-blue-light); padding: 12px; border-radius: var(--radius-sm); border: 1px solid rgba(37,99,235,0.1); color: var(--text-main);">
+                        <strong>Neira LLC is the sole and exclusive right holder of the computer program "Neirix — intelligent colleague assistant for team chats".</strong> Exclusive intellectual property rights are held directly by Neira LLC on the basis of in-house software engineering. Rights of software utilization are granted to third parties under licensing agreements and EULAs.
+                    </p>
+
+                    <!-- Tech Stack Block (Compliance check No. 3) -->
+                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Информация об используемых языках программирования и инструментах:</h4>
+                    <h4 class="en" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Information on Programming Languages, Software, and Dev Tools Used:</h4>
+                    <p class="ru" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px;">
+                        В рамках осуществления уставной деятельности в области информационных технологий ООО «Нейра» использует при разработке программных продуктов следующие языки программирования, технологии и наборы инструментов: <strong>Python (FastAPI, Django, aiogram), SQL (PostgreSQL), NoSQL (Redis, векторная СУБД Qdrant), Git, Docker, API генеративных моделей (GigaChat API).</strong>
+                    </p>
+                    <p class="en" style="font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px;">
+                        In its standard software engineering operations, Neira LLC utilizes the following languages, frameworks, databases, and DevOps utilities: <strong>Python (FastAPI, Django, aiogram), SQL (PostgreSQL), NoSQL (Redis, Qdrant vector store), Git, Docker, and Generative AI API (GigaChat API).</strong>
+                    </p>
+
+                    <!-- Regulatory Disclaimers (Mikhail's advice) -->
+                    <h4 class="ru" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Дополнительные нормативные сведения:</h4>
+                    <h4 class="en" style="margin-top: 20px; margin-bottom: 8px; color: var(--text-main); font-size: 0.95rem;">Additional Operational Statements:</h4>
+                    <ul class="feature-list" style="margin-top: 8px; margin-bottom: 0;">
+                        <li><span class="ru">Организация ООО «Нейра» <strong>не является оператором фискальных данных</strong> (ОФД).</span><span class="en">The organization <strong>is not a fiscal data operator</strong>.</span></li>
+                        <li><span class="ru">Сайт функционирует в круглосуточном режиме, свободный доступ к информации осуществляется без обязательной регистрации пользователей и ввода персональных данных.</span><span class="en">The official website operates 24/7. Content access requires no user profiles, logging, or personal data entry.</span></li>
+                    </ul>
                 </div>
 
-                <div class="card" style="margin-bottom: 24px;">
-                    <h3 class="ru">Лицензионные условия использования программного обеспечения</h3>
-                    <h3 class="en">End-User License Regulations</h3>
+                <!-- Document 1: Privacy Policy -->
+                <div class="card" id="legal-policy" style="margin-bottom: 24px; border-left: 4px solid var(--accent-blue);">
+                    <h3 class="ru">Политика в отношении обработки персональных данных ООО «Нейра»</h3>
+                    <h3 class="en">Privacy Policy Concerning Personal Data Processing of Neira LLC</h3>
                     
-                    <p class="ru">Все исключительные права на программное обеспечение, товарные знаки и текстовое содержание, опубликованное на данном ресурсе, принадлежат ООО «Нейра». Незаконное копирование элементов интерфейса или кода симуляторов преследуется в соответствии с Гражданским Кодексом РФ.</p>
-                    <p class="en">All intellectual property assets, proprietary algorithm charts, core code fragments, and trademark layouts belong directly to Neira LLC. Any unauthorized replication of design configurations or simulator mechanics is prohibited under local and international laws.</p>
+                    <p class="ru" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        Настоящая Политика определяет порядок обработки персональных данных и меры по обеспечению их безопасности в ООО «Нейра» (ИНН 7600001030) в соответствии с ФЗ №152.
+                    </p>
+                    <p class="en" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        This Policy governs the processing and physical safeguarding of personal data within Neira LLC (INN 7600001030) in compliance with Federal Law No. 152-FZ.
+                    </p>
+
+                    <!-- Scrollable legal container -->
+                    <div style="max-height: 380px; overflow-y: auto; border: 1px solid var(--border); padding: 18px; border-radius: var(--radius-md); background-color: var(--bg-main); font-size: 0.82rem; line-height: 1.5; color: var(--text-muted);">
+                        <div class="ru">
+                            <h4 style="color: var(--text-main); margin-top: 0; margin-bottom: 8px; font-size: 0.9rem;">1. Общие положения</h4>
+                            <p style="margin-bottom: 10px;">Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006 №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ООО «Нейра» (далее — Оператор).</p>
+                            <p style="margin-bottom: 10px;">1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+                            <p style="margin-bottom: 10px;">1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта nejra.ru.</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">2. Основные понятия, используемые в Политике</h4>
+                            <p style="margin-bottom: 10px;">2.1. Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств вычислительной техники;</p>
+                            <p style="margin-bottom: 10px;">2.2. Блокирование персональных данных — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</p>
+                            <p style="margin-bottom: 10px;">2.3. Веб-сайт — совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу nejra.ru;</p>
+                            <p style="margin-bottom: 10px;">2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</p>
+                            <p style="margin-bottom: 10px;">2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</p>
+                            <p style="margin-bottom: 10px;">2.6. Обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персона данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
+                            <p style="margin-bottom: 10px;">2.7. Оператор — юридическое лицо (ООО «Нейра»), самостоятельно организующее и осуществляющее обработку персональных данных, а также определяющее цели обработки, состав персональных данных, подлежащих обработке, и действия, совершаемые с персональными данными;</p>
+                            <p style="margin-bottom: 10px;">2.8. Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта nejra.ru;</p>
+                            <p style="margin-bottom: 10px;">2.9. Пользователь — любой посетитель веб-сайта nejra.ru;</p>
+                            <p style="margin-bottom: 10px;">2.10. Предоставление персональных данных — действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</p>
+                            <p style="margin-bottom: 10px;">2.11. Распространение персональных данных — любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц;</p>
+                            <p style="margin-bottom: 10px;">2.12. Уничтожение персональных данных — любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания в информационной системе.</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">3. Оператор может обрабатывать следующие персональные данные Пользователя</h4>
+                            <p style="margin-bottom: 10px;">3.1. Фамилия, имя, отчество;</p>
+                            <p style="margin-bottom: 10px;">3.2. Электронный адрес;</p>
+                            <p style="margin-bottom: 10px;">3.3. Номера телефонов;</p>
+                            <p style="margin-bottom: 10px;">3.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики.</p>
+                            <p style="margin-bottom: 10px;">3.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">4. Цели обработки персональных данных</h4>
+                            <p style="margin-bottom: 10px;">4.1. Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.</p>
+                            <p style="margin-bottom: 10px;">4.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты ai@nejra.ru с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</p>
+                            <p style="margin-bottom: 10px;">4.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">5. Правовые основания обработки персональных данных</h4>
+                            <p style="margin-bottom: 10px;">5.1. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте nejra.ru (при их наличии). Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</p>
+                            <p style="margin-bottom: 10px;">5.2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">6. Порядок сбора, хранения, передачи и других видов обработки данных</h4>
+                            <p style="margin-bottom: 10px;">Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства.</p>
+                            <p style="margin-bottom: 10px;">6.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</p>
+                            <p style="margin-bottom: 10px;">6.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</p>
+                            <p style="margin-bottom: 10px;">6.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомления на адрес электронной почты Оператора ai@nejra.ru с пометкой «Актуализация персональных данных».</p>
+                            <p style="margin-bottom: 10px;">6.4. Персональные данные обрабатываются до достижения целей обработки либо до отзыва согласия субъектом персональных данных. После достижения целей обработки персональные данные подлежат уничтожению в срок, не превышающий 30 дней, если иное не предусмотрено законодательством Российской Федерации.</p>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">7. Заключительные положения</h4>
+                            <p style="margin-bottom: 10px;">7.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты ai@nejra.ru.</p>
+                            <p style="margin-bottom: 10px;">7.2. Оператор вправе вносить изменения в настоящую Политику. Новая редакция Политики вступает в силу с момента ее размещения на Сайте.</p>
+                            <p style="margin-bottom: 0;">7.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу nejra.ru (вкладка «Правовая информация»).</p>
+                        </div>
+                        <div class="en">
+                            <h4 style="color: var(--text-main); margin-top: 0; margin-bottom: 8px; font-size: 0.9rem;">1. General Provisions</h4>
+                            <p style="margin-bottom: 10px;">This personal data processing policy is compiled in accordance with the Federal Law of the RF of 27.07.2006 No. 152-FZ "On Personal Data" and defines the rules of processing personal data and security measures taken by Neira LLC (hereinafter referred to as the Operator).</p>
+                            <p style="margin-bottom: 10px;">1.1. The Operator's key activity principle is to protect civil rights and freedoms of individuals during data processing, including privacy and personal secrets.</p>
+                            <p style="margin-bottom: 10px;">1.2. This policy applies to all telemetry and input information that the Operator may compile about visitors of the nejra.ru website.</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">2. Core Terminology</h4>
+                            <p style="margin-bottom: 10px;">2.1. Automated processing — processing executed by computing hardware.</p>
+                            <p style="margin-bottom: 10px;">2.2. Blocking — temporary suspension of processing workflows.</p>
+                            <p style="margin-bottom: 10px;">2.3. Website — the graphical and source assets hosted at nejra.ru.</p>
+                            <p style="margin-bottom: 10px;">2.4. Personal Data System — database structures holding personal telemetry parameters.</p>
+                            <p style="margin-bottom: 10px;">2.5. Anonymization — removing direct linkages to an identifiable individual.</p>
+                            <p style="margin-bottom: 10px;">2.6. Processing — any action executed on user data (including storage, indexing, sorting, updating, deletion).</p>
+                            <p style="margin-bottom: 10px;">2.7. Operator — Neira LLC, determining processing parameters, scopes, and objectives.</p>
+                            <p style="margin-bottom: 10px;">2.8. Personal Data — any records directly or indirectly linked to an identifiable User of nejra.ru.</p>
+                            <p style="margin-bottom: 10px;">2.9. User — any visitor of nejra.ru.</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">3. Processed Datasets</h4>
+                            <p style="margin-bottom: 10px;">3.1. Full Name (F.I.O.);</p>
+                            <p style="margin-bottom: 10px;">3.2. E-mail Address;</p>
+                            <p style="margin-bottom: 10px;">3.3. Contact Phone Numbers;</p>
+                            <p style="margin-bottom: 10px;">3.4. Anonymous cookie telemetry metrics and tracking scripts logs.</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">4. Objectives of Processing</h4>
+                            <p style="margin-bottom: 10px;">4.1. Replying to customer inquiries, sending estimates, and dispatching product details.</p>
+                            <p style="margin-bottom: 10px;">4.2. Users can withdraw consent at any time by emailing ai@nejra.ru with "Withdrawal" subject.</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">5. Legal Groundings</h4>
+                            <p style="margin-bottom: 10px;">5.1. Consent triggers if and when a User voluntarily submits web forms (when available) on nejra.ru.</p>
+                            <p style="margin-bottom: 10px;">5.2. Cookies are processed if allowed inside browser configuration settings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document 2: User Consent -->
+                <div class="card" id="legal-consent" style="margin-bottom: 24px; border-left: 4px solid var(--accent-indigo);">
+                    <h3 class="ru">Согласие на обработку персональных данных ООО «Нейра»</h3>
+                    <h3 class="en">Consent to Personal Data Processing of Neira LLC</h3>
+                    
+                    <p class="ru" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        Настоящее Согласие регулирует условия добровольного предоставления данных при направлении обращений в ООО «Нейра» через сайт nejra.ru.
+                    </p>
+                    <p class="en" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        This Consent regulates the conditions of voluntary data provisioning when contacting Neira LLC via nejra.ru.
+                    </p>
+
+                    <!-- Scrollable legal container -->
+                    <div style="max-height: 380px; overflow-y: auto; border: 1px solid var(--border); padding: 18px; border-radius: var(--radius-md); background-color: var(--bg-main); font-size: 0.82rem; line-height: 1.5; color: var(--text-muted);">
+                        <div class="ru">
+                            <p style="margin-bottom: 12px; font-weight: bold;">Пользователь, оставляя обращение, заявку на сайте nejra.ru (далее также — сайт), принимает настоящее Согласие на обработку персональных данных.</p>
+                            <p style="margin-bottom: 12px;">Пользователь, действуя свободно, своей волей и в своём интересе, подтверждая свою дееспособность, даёт своё согласие <strong>ООО «Нейра»</strong> (ИНН 7600001030, ОГРН 1267600002890, адрес местонахождения: 150003, Ярославская область, г. Ярославль, Республиканская ул., д. 3 стр. 5, офис 3310) на обработку своих персональных данных как с использованием, так и без использования средств автоматизации для целей обработки входящих запросов физических лиц (пользователей) с целью консультирования, направления комментариев физическим лицам (пользователям); аналитики действий физического лица (пользователя) на сайте и функционирования сайта; выполнения обязательств по договору оферты, принятому пользователем на сайте. При этом:</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">1. Согласие предоставлено для использования следующих персональных данных:</h4>
+                            <ul style="margin-left: 18px; margin-bottom: 12px; list-style-type: disc;">
+                                <li>фамилия, имя, отчество;</li>
+                                <li>номера контактных телефонов;</li>
+                                <li>адреса электронной почты;</li>
+                                <li>сведения о местоположении;</li>
+                                <li>тип, версия, язык операционной системы, браузера;</li>
+                                <li>тип устройства и разрешение его экрана;</li>
+                                <li>страницы, открываемые пользователем;</li>
+                                <li>IP-адрес.</li>
+                            </ul>
+
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">2. Обработка персональных данных может включать следующие действия:</h4>
+                            <p style="margin-bottom: 12px;">сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение.</p>
+                            <p style="margin-bottom: 12px;">Настоящее согласие может быть отозвано путём направления субъектом персональных данных (пользователем) или его представителем письменного заявления: <strong>ООО «Нейра»</strong> (ИНН 7600001030) либо по адресу электронной почты: <strong>ai@nejra.ru</strong>.</p>
+                            <p style="margin-bottom: 12px;">В случае отзыва субъектом персональных данных (пользователем) согласия на обработку персональных данных <strong>ООО «Нейра»</strong> (ИНН 7600001030) вправе продолжить обработку таких персональных данных в случаях, предусмотренных пунктами 2–11 части 1 статьи 6, пунктами 2–10 части 2 статьи 10, части 2 статьи 11 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+                            <p style="margin-bottom: 0;">Согласие предоставляется на срок до достижения целей обработки персональных данных либо до его отзыва субъектом персональных данных. Запросы относительно персональных данных могут быть направлены по электронному адресу: <strong>ai@nejra.ru</strong>.</p>
+                        </div>
+                        <div class="en">
+                            <p style="margin-bottom: 12px; font-weight: bold;">The User, by leaving inquiries or requests on the nejra.ru site (hereinafter — the Site), accepts this Consent to Personal Data Processing.</p>
+                            <p style="margin-bottom: 12px;">The User, acting freely, of their own will, and in their own interest, confirming their legal capacity, hereby grants consent to <strong>Neira LLC</strong> (INN 7600001030, OGRN 1267600002890, address: office 3310, 3 Respublikanskaya St., bld. 5, Yaroslavl, 150003, Russia) to process their personal data, with or without automation tools, for answering inquiries of users, providing software consulting, website metrics tracking, and platform performance audit. In particular:</p>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">1. Consent applies to the following categories of data:</h4>
+                            <ul style="margin-left: 18px; margin-bottom: 12px; list-style-type: disc;">
+                                <li>First name, middle name, last name;</li>
+                                <li>Contact phone numbers;</li>
+                                <li>Contact e-mail addresses;</li>
+                                <li>Geographic location;</li>
+                                <li>Browser configuration parameters, operating system, and hardware tags;</li>
+                                <li>Screen resolution and device specifications;</li>
+                                <li>Navigated pages log;</li>
+                                <li>Network IP addresses.</li>
+                            </ul>
+                            
+                            <h4 style="color: var(--text-main); margin-top: 14px; margin-bottom: 8px; font-size: 0.9rem;">2. Processing Workflows:</h4>
+                            <p style="margin-bottom: 0;">Collection, recording, sorting, structural storage, on-prem archiving, retrieval, processing updates, on-demand masking, secure deletion, and complete hardware erasure. Consent remains active until achieved goals or user revocation via ai@nejra.ru.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document 3: Cookie Policy -->
+                <div class="card" id="legal-cookies" style="margin-bottom: 24px; border-left: 4px solid var(--accent-emerald);">
+                    <h3 class="ru">Политика использования Cookies ООО «Нейра»</h3>
+                    <h3 class="en">Cookies Usage Policy of Neira LLC</h3>
+                    
+                    <p class="ru" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        Настоящий документ регламентирует сбор и обработку временных и постоянных файлов cookie посетителей сайта nejra.ru Оператором.
+                    </p>
+                    <p class="en" style="font-size: 0.95rem; margin-top: 8px; margin-bottom: 12px; font-weight: 500;">
+                        This document establishes rules for tracking session and persistent cookies of nejra.ru visitors by the Operator.
+                    </p>
+
+                    <!-- Scrollable legal container -->
+                    <div style="max-height: 380px; overflow-y: auto; border: 1px solid var(--border); padding: 18px; border-radius: var(--radius-md); background-color: var(--bg-main); font-size: 0.82rem; line-height: 1.5; color: var(--text-muted);">
+                        <div class="ru">
+                            <p style="margin-bottom: 10px;">1. Общество с ограниченной ответственностью «Нейра» (далее – Компания) обрабатывает данные, указанные в настоящем документе (далее – Политика), собранные в процессе использования посетителями веб-сайта Компании. При нажатии кнопки «Принять» в окне-уведомлении об обработке Cookies, Вы даете свое согласие на обработку Ваших Cookies. Вы также можете отказаться от обработки Cookies в соответствии с пунктом 6 настоящей Политики.</p>
+                            <p style="margin-bottom: 10px;">2. Что такое Cookies?<br>Cookies — это небольшой фрагмент данных, который веб-сайт запрашивает у браузера, используемого на вашем компьютере или мобильном устройстве. Cookies содержат информацию о Ваших действиях на веб-сайте, а также могут содержать сведения о Вашем оборудовании, дату и время сессии. Cookies хранятся локально на Вашем компьютере или мобильном устройстве.</p>
+                            <p style="margin-bottom: 10px;">3. Как Компания использует Ваши Cookies?<br>Cookies используются Компанией в целях улучшения и обеспечения нормальной работоспособности веб-сайта, а также в целях совершенствования продуктов и услуг Компанией и его партнеров — в частности, путем определения Ваших предпочтений для предоставления Вам целевой информации по таким продуктам и услугам.</p>
+                            <p style="margin-bottom: 10px;">4. Как Компания обрабатывает Ваши Cookies?<br>Мы обрабатываем полученные данные с использованием системы сбора статистики Яндекс.Метрика и других сервисов аналитики и метрических программ.</p>
+                            <p style="margin-bottom: 10px;">5. Какие виды Cookies используются?</p>
+                            <ul style="margin-left: 18px; margin-bottom: 10px; list-style-type: disc;">
+                                <li>а) Временные («сессионные»). Такие cookie используются только в момент пользования сайтом. Например, в них могут быть данные о просмотренных страницах. Эти файлы удаляются после закрытия окна браузера.</li>
+                                <li>б) Постоянные. Cookies, которые хранятся на Вашем компьютере или мобильном устройстве и не удаляются при закрытии браузера. Постоянные Cookies могут сохранять пользовательские настройки для определенного веб-сайта, позволяя использовать эти предпочтения в будущих сеансах использования веб-сайта. Такие Cookies позволяют идентифицировать Вас как уникального пользователя и при возвращении на веб-сайт помогают вспомнить информацию о Вас и ранее совершенных Вами действиях.</li>
+                                <li>в) Аналитические/маркетинговые. Включают в себя информацию о том, как Вы используете веб-сайт, например, какие страницы Вы посещаете, по каким ссылкам переходите. Компания использует эти Cookies, в основном, для того, чтобы улучшить функционал веб-сайта и Ваш пользовательский опыт при его использовании. Иногда такие Cookies также позволяют определить Ваши предпочтения и предоставить Вам полезную целевую информацию по продуктам, услугам и сервисам, которые могут Вас заинтересовать.</li>
+                                <li>г) Обязательные. Это минимальный набор Cookies, использование которых необходимо для обеспечения правильной и бесперебойной работы веб-сайта.</li>
+                            </ul>
+                            <p style="margin-bottom: 0;">6. Как отказаться от обработки Cookies?<br>Cookies устанавливаются в браузер на Вашем устройстве — в большинстве случаев это происходит автоматически. Вы можете отказаться от сохранения и использования Cookies на своем устройстве или удалить уже сохраненные Cookies в настройках Вашего браузера. В том случае, если Вы откажетесь от обработки Cookies, наш веб-сайт будет использовать только обязательные Cookies.</p>
+                        </div>
+                        <div class="en">
+                            <p style="margin-bottom: 10px;">1. Neira Limited Liability Company (hereinafter – the Company) processes telemetry cookies collected during website browsing sessions. By clicking "Accept" inside the popup banner window, you grant consent to process cookies. You can reject cookies inside browser parameters under Clause 6.</p>
+                            <p style="margin-bottom: 10px;">2. What are Cookies?<br>Cookies are small snippets of structured text variables stored in local browser storages. They map interaction telemetry, visit dates, and screen/session details.</p>
+                            <p style="margin-bottom: 10px;">3. Objectives:<br>Enhancing platform accessibility, validating technical rendering speed, and indexing user layout preferences.</p>
+                            <p style="margin-bottom: 10px;">4. Analytics engines:<br>Yandex.Metrica and similar metric programs.</p>
+                            <p style="margin-bottom: 0;">5. Cookie classifications:<br>Session-based, Persistent, Analytical, and Mandatory. Users can block cookies in standard web browser configurations.</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -705,9 +987,11 @@
                     <span>ООО «Нейра» | Neira LLC</span>
                 </a>
                 
-                <ul class="footer-links">
-                    <li><button class="footer-link-btn" onclick="switchTab('legal')"><span class="ru">Политика обработки ПД</span><span class="en">Privacy Policy</span></button></li>
-                    <li><button class="footer-link-btn" onclick="switchTab('legal')"><span class="ru">Пользовательское соглашение</span><span class="en">User Agreement</span></button></li>
+                <ul class="footer-links" style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <li><button class="footer-link-btn" onclick="switchLegalSection('info')"><span class="ru">Сведения об ИТ-организации</span><span class="en">IT Organization Profile</span></button></li>
+                    <li><button class="footer-link-btn" onclick="switchLegalSection('policy')"><span class="ru">Политика обработки ПД</span><span class="en">Privacy Policy</span></button></li>
+                    <li><button class="footer-link-btn" onclick="switchLegalSection('consent')"><span class="ru">Согласие на обработку ПД</span><span class="en">Consent to Data Processing</span></button></li>
+                    <li><button class="footer-link-btn" onclick="switchLegalSection('cookies')"><span class="ru">Политика использования Cookies</span><span class="en">Cookie Policy</span></button></li>
                 </ul>
 
                 <div>
@@ -717,14 +1001,7 @@
         </div>
     </footer>
 
-    <!-- Simple Offline Compliant Success Toast -->
-    <div class="toast" id="successToast">
-        <svg viewBox="0 0 20 20" fill="currentColor" style="width: 18px; height: 18px;">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
-        </svg>
-        <span class="ru">Сообщение отправлено анонимно!</span>
-        <span class="en">Message sent anonymously!</span>
-    </div>
+
 
     <!-- JavaScript Dynamic Simulator & Language Switcher & Tab Switcher & Mobile Drawer -->
     <script>
@@ -800,16 +1077,7 @@
             }
         });
 
-        // Form feedback toaster
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const toast = document.getElementById('successToast');
-            toast.classList.add('show');
-            document.getElementById('contactForm').reset();
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3500);
-        }
+
 
         // Telegram Bot Simulator Logic (Ultra interactive, without emojis, with typing state)
         let simulationTimeout;
@@ -917,13 +1185,74 @@
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
-        // set timestamp on initial msg to current time
+        // Cookie Consent Banner Logic with try-catch to support file:// and sandbox protocols
+        function checkCookieConsent() {
+            try {
+                const consent = localStorage.getItem('cookie-consent-accepted');
+                const banner = document.getElementById('cookie-banner');
+                if (!consent && banner) {
+                    banner.style.display = 'block';
+                }
+            } catch (e) {
+                console.warn("localStorage is blocked or unavailable. Displaying cookie banner by default.", e);
+                const banner = document.getElementById('cookie-banner');
+                if (banner) {
+                    banner.style.display = 'block';
+                }
+            }
+        }
+
+        function acceptCookies() {
+            try {
+                localStorage.setItem('cookie-consent-accepted', 'true');
+            } catch (e) {
+                console.warn("localStorage write is blocked or unavailable.", e);
+            }
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.style.opacity = '0';
+                banner.style.transform = 'translateY(20px)';
+                banner.style.transition = 'opacity 0.3s, transform 0.3s';
+                setTimeout(() => {
+                    banner.style.display = 'none';
+                }, 300);
+            }
+        }
+
+        // Fast clean navigation between legal policies
+        function switchLegalSection(sectionId) {
+            // 1. Switch to legal tab panel
+            switchTab('legal');
+            
+            // 2. Clear any borders and highlight target section
+            document.querySelectorAll('#tab-legal .card').forEach(card => {
+                card.style.boxShadow = 'none';
+                card.style.borderColor = 'var(--border)';
+            });
+            
+            const targetCard = document.getElementById('legal-' + sectionId);
+            if (targetCard) {
+                // Highlight with nice subtle shadow
+                targetCard.style.borderColor = 'var(--accent-blue)';
+                targetCard.style.boxShadow = '0 4px 20px rgba(37, 99, 235, 0.08)';
+                
+                // 3. Scroll to the highlighted section
+                setTimeout(() => {
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 150);
+            }
+        }
+
+        // set timestamp on initial msg to current time and check cookie consent
         window.addEventListener('load', () => {
             const now = new Date();
             const timeStr = now.toTimeString().split(' ')[0].substring(0, 5);
             const initialTimeLabel = document.getElementById('tg-time-init');
             if (initialTimeLabel) {
                 initialTimeLabel.innerText = timeStr;
+            }
+            if (typeof checkCookieConsent === 'function') {
+                checkCookieConsent();
             }
         });
     </script>
@@ -989,5 +1318,31 @@
             }
         }
     </script>
+
+    <!-- Premium Minimal Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <div class="cookie-text-wrapper">
+                <div style="font-weight: 700; color: var(--text-main); margin-bottom: 6px; font-size: 0.9rem;">
+                    <span class="ru">Файлы cookie и метрики</span>
+                    <span class="en">Cookie Files &amp; Analytics</span>
+                </div>
+                <p class="ru" style="margin: 0; font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); margin-bottom: 12px;">
+                    Мы обрабатываем данные cookie посетителей сайта nejra.ru для улучшения работоспособности и веб-аналитики. Вы можете дать согласие на обработку или настроить параметры вашего браузера.
+                </p>
+                <p class="en" style="margin: 0; font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); margin-bottom: 12px;">
+                    We process cookie telemetry of nejra.ru visitors to enhance website performance and analytics. You can consent to processing or manage browser settings.
+                </p>
+            </div>
+            <div style="display: flex; gap: 8px; justify-content: flex-end; width: 100%;">
+                <button class="btn btn-secondary" onclick="switchLegalSection('cookies')" style="padding: 6px 12px; font-size: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border); font-weight: 600; cursor: pointer; white-space: nowrap;">
+                    <span class="ru">Политика</span><span class="en">Policy</span>
+                </button>
+                <button class="btn btn-primary" onclick="acceptCookies()" style="padding: 6px 16px; font-size: 0.75rem; border-radius: var(--radius-sm); border: none; font-weight: 700; cursor: pointer; white-space: nowrap;">
+                    <span class="ru">Принять</span><span class="en">Accept</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
